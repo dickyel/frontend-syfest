@@ -22,35 +22,39 @@
 </head>
 <body class="font-[Montserrat] bg-[#39638A]">
     <!-- navbar -->
-    <nav class="flex flex-row max-w-6xl mx-auto justify-between items-center py-8 px-5 mb-8 overflow-hidden"  data-aos="zoom-in" data-aos-duration="1000"   data-aos-delay="50">
-        <a href="index.html">
-            <img src="assets/images/logo.png" alt="" width="50px">
-        </a>
-        <a href="index.html" class="text-base text-white font-bold">
-            Asfera ©2023/2034
-        </a>
-        <button id="openModal" class="btn-modal modal-open bg-transparent">
-            <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect y="0.5" width="70" height="5" fill="white"/>
-                <rect y="16.5" width="70" height="5" fill="white"/>
-            </svg>
-                
-        </button>
+    <header class="fixed top-0 left-0 right-0 bg-[#39638A] z-50">
+        <nav class="  flex flex-row max-w-6xl mx-auto justify-between items-center py-5 px-5  overflow-hidden" data-aos="zoom-in" data-aos-duration="1000"   data-aos-delay="50">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="" width="50px">
+            </a>
+            <a href="index.html" class="text-base text-white font-bold">
+                Asfera ©2023/2034
+            </a>
+            <button id="openModal" class="btn-modal modal-open bg-transparent">
+                <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.5" width="70" height="5" fill="white"/>
+                    <rect y="16.5" width="70" height="5" fill="white"/>
+                </svg>
+                    
+            </button>
 
-    </nav>
+            
+
+        </nav>
+    </header>
 
     <!-- modal pop up  -->
     <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-[999] overflow-hidden">
         <div class="modal-overlay absolute w-full h-full bg-[#39638A] opacity-95"></div>
         
-        <div class="modal-container fixed w-full h-full z-50 overflow-y-auto items-center">
+        <div class="modal-container fixed w-full h-full overflow-y-auto items-center">
             
             <!-- navbar -->
-            <nav class="flex flex-row max-w-6xl mx-auto justify-between items-center py-8 px-5 mb-8">
+            <nav class="flex flex-row max-w-6xl mx-auto justify-between items-center py-5 px-5">
                 <a href="index.html">
                     <img src="assets/images/logo.png" alt="" width="50px">
                 </a>
-               
+            
                 <button id="openModal" class="btn-modal modal-open bg-transparent">
                     <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="0.5" width="70" height="5" fill="white"/>
@@ -63,10 +67,10 @@
             </nav>
         
             <!-- menu -->
-            <div class="modal-content justify-center mx-auto h-auto text-center py-8 flex flex-col items-center ">
+            <div class="modal-content justify-center mx-auto h-auto text-center py-4 flex flex-col items-center ">
             
             <!-- navigasi -->
-            <div class=" items-center pb-2 py-20">
+            <div class=" items-center pb-2 py-16">
                 <ul class="flex flex-col gap-y-4">
                     <li>
                         <a href="index.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Home</a>
@@ -92,7 +96,7 @@
     </div>
 
     <!-- merchandise -->
-    <section class="merchandise max-w-6xl mx-auto py-6 px-5 overflow-hidden">
+    <section class="merchandise max-w-6xl mx-auto py-6 px-5 overflow-hidden mt-40">
         <div class="header-merchandise flex flex-col md:flex-row gap-x-2 md:items-center justify-between" data-aos="fade-up" data-aos-duration="2000">
             <div class="flex flex-row">
                 <div class="flex flex-col">
