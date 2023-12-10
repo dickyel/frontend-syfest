@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Montserrat:wght@300;400;500;600;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Add these lines inside the head tag -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <link rel="stylesheet" href="input.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+</head>
+<body class="font-[Montserrat] bg-[#39638A]">
+
+    <nav class="flex flex-row max-w-6xl mx-auto justify-between items-center py-8 px-5 mb-8 overflow-hidden"  data-aos="zoom-in" data-aos-duration="1000"   data-aos-delay="50">
+        <a href="index.html">
+            <img src="assets/images/logo.png" alt="" width="50px">
+        </a>
+        <a href="index.html" class="text-base text-white font-bold">
+            Asfera ©2023/2034
+        </a>
+        <button id="openModal" class="btn-modal modal-open bg-transparent">
+            <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0.5" width="70" height="5" fill="white"/>
+                <rect y="16.5" width="70" height="5" fill="white"/>
+            </svg>
+                
+        </button>
+
+    </nav>
+
+    <!-- modal pop up  -->
+    <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-[999] overflow-hidden">
+        <div class="modal-overlay absolute w-full h-full bg-[#39638A] opacity-95"></div>
+        
+        <div class="modal-container fixed w-full h-full z-50 overflow-y-auto items-center">
+            
+            <!-- navbar -->
+            <nav class="flex flex-row max-w-6xl mx-auto justify-between items-center py-8 px-5 mb-8">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="" width="50px">
+                </a>
+               
+                <button id="openModal" class="btn-modal modal-open bg-transparent">
+                    <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.5" width="70" height="5" fill="white"/>
+                        <rect y="16.5" width="70" height="5" fill="white"/>
+                    </svg>
+                        
+                        
+                </button>
+
+            </nav>
+        
+            <!-- menu -->
+            <div class="modal-content justify-center mx-auto h-auto text-center py-8 flex flex-col items-center ">
+            
+            <!-- navigasi -->
+            <div class=" items-center pb-2 py-20">
+                <ul class="flex flex-col gap-y-4">
+                    <li>
+                        <a href="index.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Home</a>
+                    </li>
+                    <li>
+                        <a href="merchandise.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Merchandise</a>
+                    </li>
+                    <li>
+                        <a href="homestay.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Homestay</a>
+                    </li>
+                    <li>
+                        <a href="competition.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Competition</a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Contact Us</a>
+                    </li>
+                </ul>
+                
+            </div>
+        
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- competition -->
+    <section class="competition max-w-6xl mx-auto py-6 px-5 overflow-hidden" data-aos="fade-up" data-aos-duration="2000">
+        <div class="header-merchandise flex flex-col md:flex-row gap-x-2 justify-between md:items-center">
+            <div class="flex flex-row">
+                <div class="flex flex-col">
+                    <h1 class="lg:text-7xl md:text-5xl text-4xl text-white font-bold font-['Inria_Sans']">
+                        COMPETITION <br> FOR ALL                    
+                    </h1>
+                </div>
+            </div>
+         
+            <div class="flex flex-col ">
+                <p class="text-white font-['Inria_Sans']  text-xl font-regular items-center">
+                    Sportsmanship and enthusiasm are<br>the keys to making an event run smoothly
+                </p>
+                <button  class=" mt-4 py-2 px-4 rounded-md  bg-white text-[#39638A] hover:bg-[#39638A] hover:text-white hover:border-2 font-bold ">Lihat Rulebook umum</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- tab competition -->
+    <section class="tab-competition max-w-6xl mx-auto pt-10 px-6 py-4 overflow-hidden" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="50">
+        <div class="bg-white py-10 px-8 rounded-xl">
+            <div x-data="{ openTab: 1 }" class="">
+                <div class="">
+                    <div class="mb-4 flex flex-col space-y-2 md:flex-row md:space-x-4 md:space-y-0 bg-white rounded-lg" data-aos="fade-left" data-aos-duration="1000">
+                        
+                        <div x-on:click="openTab = 1" :class="{ 'bg-[#39638A] text-white': openTab === 1 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 font-semibold text-center">GIRLS (PUTRI)</div>
+
+                        <div x-on:click="openTab = 2" :class="{ 'bg-[#39638A] text-white': openTab === 2 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 font-semibold text-center">BOYS (PUTRA)</div>
+                        
+                    </div>
+
+                    
+                    <div x-show="openTab === 1" class="transition-all duration-300 bg-white p-4 rounded-xl" data-aos="zoom-out-up" data-aos-duration="2000">
+                        
+                        <div x-data="{ subTab: 7 }" class="">
+                            <div class="mb-4 flex flex-col space-y-2 md:flex-row md:space-x-4 md:space-y-0 bg-white rounded-lg" data-aos="fade-left" data-aos-duration="1000">
+                                <button x-on:click="subTab = 7" :class="{ 'bg-[#39638A] text-white': subTab === 7 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 font-semibold">ALL (SEMUA)</button>
+                                <button x-on:click="subTab = 8" :class="{ 'bg-[#39638A] text-white': subTab === 8 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 font-semibold">SMA</button>
+                                <button x-on:click="subTab = 9" :class="{ 'bg-[#39638A] text-white': subTab === 9 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 font-semibold">SMP/SMA</button>
+                            
+                            </div>
+
+                            <div x-show="subTab === 7" class="transition-all duration-300 bg-white p-4 border-l-4
+                             rounded-xl" data-aos="zoom-out-up" data-aos-duration="2000">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-x-2 gap-y-4 overflow-hidden">
+                                    <!-- Quick and Smart -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-mtq.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Quick and Smart (Academic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba Cepat dan Cerdas adalah lomba yang mendorong peserta menunjukkan pemecahan masalah cepat dan pengambilan keputusan cerdas dalam berbagai situasi untuk meraih kemenangan <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+                                    <!-- basket -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-basket.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Basket (Sport/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba basket adalah lomba olahraga tim dengan tujuan memasukkan bola ke keranjang lawan untuk meraih skor tertinggi. Tim terorganisir, strategi, kelincahan dibutuhkan. <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- ilus mtq -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-mtq.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">MTQ (Islamic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba MTQ (Musabaqah Tilawatil Quran) adalah ajang kompetisi membaca Al-Quran untuk mengukir keahlian dan penghafalan ayat suci. <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- Debat Islami -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-debate.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Debate Islami (Islamic/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba debat Islami mempertemukan peserta dalam diskusi argumen yang mendalam, membahas isu-isu kehidupan dengan perspektif Islam, memperkuat pemahaman agama. <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- ratoeh jaroe -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ratoeh-jaroe.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Ratoeh Jaroeh (Art/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba Ratoeh Jaroe adalah Kontes tari tradisional Aceh yang mempertandingkan keindahan gerakan dan keberanian penari dalam menyajikan warisan budaya <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+                                       
+                                    <!-- llai -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-llai.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Lomba Lintas Alam Islami (Sport/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba Lintas Alam Islami adalah mengajak peserta menjelajahi keindahan alam sambil memperkuat nilai-nilai Islami melalui kegiatan positif." <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- solo vocal -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/solo-vocal.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Solo Vocal (Art/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba solo vocal adalah kompetisi menyanyi tunggal dengan penilaian vokal, interpretasi, dan ekspresi individu di atas panggung. <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- lkbb -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-lkkb.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Lomba Keterampilan Baris Berbaris (Sport/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">                                                 
+                                                Lomba LKBB adalah kompetisi kepramukaan yang melibatkan kegiatan baris-berbaris, membangun karakter, dan meningkatkan kedisiplinan siswa <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <!-- tapak suci -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/mascot-1 (2).png" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Tapak Suci (Sport/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Tapak suci adalah lomba beladiri yang dilakukan secara individu. Kegiatan ini mengelompokkan sesuai kategori fisik  <span class="font-bold ">(OFFLINE)</span>.
+                                                    
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- putri asfera -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-putri-asfera.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Putri Asfera (Academic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba Putri Asfera: Kompetisi kecantikan dan kepribadian, mempertegas keanggunan dan kecerdasan perempuan muda dalam mewujudkan visi positif adalah <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- hadroh -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl overflow-hidden gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="md:h-80 h:40" src="assets/images/mascot-1 (5).png" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-4 py-6 bg-gray-300 bg-opacity-75  rounded-2xl">
+                                            <a class="btn-card">
+                                                <h5 class="text-white font-bold">HADROH (Islamic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Hadroh adalah kompetisi yang berisi permainan seni musik berupa hadroh & marawis sebagai pengiring lagu islami <span class="font-bold ">(OFFLINE)</span>
+                                                </p>
+
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                                
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- spelling bee -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-spelling-bee.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Spelling Bee (Linguistik/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Spelling Bee adalah kompetisi ejaan di mana peserta mengeja kata-kata secara lisan untuk memenangkan tantangan ejaan. <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                    <!-- panahan -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md overflow-hidden">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/mascot-1 (4).png" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-4 py-6 bg-gray-300 bg-opacity-75  rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Panahan (Sport/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px] ">
+                                                    Panahan merupakan lomba olahraga yang disunnahkan, dengan cara melepas anak panah untuk mencapai sasaran <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div> 
+                                        
+                                    </div>
+
+                                    <!-- musabaqah hifzil quran -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-mhq.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Musabaqah Hifdzil Quran (Islamic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Quick And Smart adalah kompetisi atau perlombaan dalam membaca Al-Quran dengan indah dan benar <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- dai cilik -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6  rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center xlarge-only-text-justify">
+                                            <img class="h-80" src="assets/images/mascot-1 (3).png" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-4 py-6 bg-gray-300 bg-opacity-75 hover:bg-[#A596C7] rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Dai Cilik (Islamic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Merupakan kompetisi anak usia dini menampilkan pidato/dakwah Islam terbaiknya didepan dewan juri dan murid <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <!-- online -->
+
+                                    <!-- blog -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-blog.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">A Day In My Life (Art/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Video blog kreatif, menggabungkan cerita unik, visual menarik, dan pesan inspiratif. Menyajikan konten yang memikat untuk memenangkan lomba <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- essay -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-essay.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">ESSAY (Linguistik/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba essay mengajak peserta merinci ide, argumen, dan solusi terbaik dalam 20 kata untuk memecahkan tantangan zaman modern <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- fashion district -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-fashion.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Fashion District (Art/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba fashion district: Pamer gaya kreatif, tren terkini, dan inovasi desain di pusat mode yang penuh inspirasi <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- illus movie -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-movie.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Short Movie (Art/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Film pendek ini menggambarkan perjalanan emosional seorang individu, menginspirasi pemirsa dengan pesan mendalam tentang kehidupan dan perubahan <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- kaligrafi -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-kaligrafi.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Kaligrafi (Islamic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba kaligrafi adalah kompetisi seni menulis indah, menggabungkan keindahan estetika dan keterampilan teknis dalam penggunaan huruf <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- cover song -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-cover-jingle.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Cover Song (Art/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba cover song: Ekspresikan bakat musikmu, tampilkan kreativitas dalam mendaur ulang lagu favorit dengan gaya unik dan penuh emosi <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- ilus poster -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-poster.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Digital Poster (Art/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Poster digital kreatif ini menggambarkan inovasi dan solusi untuk masa depan, menarik perhatian dengan desain visual yang menarik <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+                                     
+                                    <!-- Business Plan -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-mtq.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Business Plan (Academic/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Business plan adalah lomba Inovatif, berkelanjutan, dan skalabilitas tinggi. lomba untuk Solusi unik untuk pasar, keuangan mantap, tim berkualitas, dan strategi pemasaran efektif. <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- kir ilmiah -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-kir.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Karya Ilmiah Remaja(Academic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba karya ilmiah mengajak peserta untuk meneliti, menganalisis, dan menyajikan temuan ilmiah dalam format penulisan yang terstruktur dan akurat.<span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- fotografi -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-fotografi.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Fotografi (Art/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Tangkap momen indah dan unik dengan keahlian fotografi Anda, sampaikan cerita melalui lensa kreatif untuk memenangkan hadiah lomba ini <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- Tutur siroh -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-tutur-shiroh.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Tutor Siroh (Islamic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba Tutur Siroh: Berkisah tentang perjalanan hidup penuh hikmah, nilai, dan perjuangan, membangkitkan semangat dan inspirasi dalam kearifan lokal. <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                    <!-- Story Telling -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-putri-asfera.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Story Telling (Linguistic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Sebuah kisah menginspirasi tentang perjalanan pribadi, tantangan, dan pertumbuhan, membawa makna hidup yang mendalam dan berkesan. <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div x-show="subTab === 8" class="transition-all duration-300 bg-white p-4 border-l-4 rounded-xl" data-aos="zoom-out-up" data-aos-duration="2000">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-x-2 gap-y-4 overflow-hidden">
+                                    <!-- basket -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-basket.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Basket (Sport/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba basket adalah lomba olahraga tim dengan tujuan memasukkan bola ke keranjang lawan untuk meraih skor tertinggi. Tim terorganisir, strategi, kelincahan dibutuhkan. <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+                                    <!-- Debat Islami -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-debate.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Debate Islami (Islamic/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba debat Islami mempertemukan peserta dalam diskusi argumen yang mendalam, membahas isu-isu kehidupan dengan perspektif Islam, memperkuat pemahaman agama. <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- ratoeh jaroe -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ratoeh-jaroe.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Ratoeh Jaroeh (Art/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba Ratoeh Jaroe adalah Kontes tari tradisional Aceh yang mempertandingkan keindahan gerakan dan keberanian penari dalam menyajikan warisan budaya <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+                                    <!-- lkbb -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-lkkb.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Lomba Keterampilan Baris Berbaris (Sport/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">                                                 
+                                                Lomba LKBB adalah kompetisi kepramukaan yang melibatkan kegiatan baris-berbaris, membangun karakter, dan meningkatkan kedisiplinan siswa <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- putri asfera -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-putri-asfera.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Putri Asfera (Academic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba Putri Asfera: Kompetisi kecantikan dan kepribadian, mempertegas keanggunan dan kecerdasan perempuan muda dalam mewujudkan visi positif adalah <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+                                    <!-- essay -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-essay.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">ESSAY (Linguistik/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba essay mengajak peserta merinci ide, argumen, dan solusi terbaik dalam 20 kata untuk memecahkan tantangan zaman modern <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+                                    <!-- fashion district -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-fashion.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Fashion District (Art/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba fashion district: Pamer gaya kreatif, tren terkini, dan inovasi desain di pusat mode yang penuh inspirasi <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+                                    <!-- cover song -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-cover-jingle.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Cover Song (Art/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba cover song: Ekspresikan bakat musikmu, tampilkan kreativitas dalam mendaur ulang lagu favorit dengan gaya unik dan penuh emosi <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- Business Plan -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-mtq.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Business Plan (Academic/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Business plan adalah lomba Inovatif, berkelanjutan, dan skalabilitas tinggi. lomba untuk Solusi unik untuk pasar, keuangan mantap, tim berkualitas, dan strategi pemasaran efektif. <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div x-show="subTab === 9" class="transition-all duration-300 bg-white p-4 border-l-4 rounded-xl" data-aos="zoom-out-up" data-aos-duration="2000">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-x-2 gap-y-4 overflow-hidden">
+                                    <!-- Quick and Smart -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-mtq.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Quick and Smart (Academic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba Cepat dan Cerdas adalah lomba yang mendorong peserta menunjukkan pemecahan masalah cepat dan pengambilan keputusan cerdas dalam berbagai situasi untuk meraih kemenangan <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- ilus mtq -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                    <div class="img-card text-center items-center justify-center">
+                                        <img class="h-80" src="assets/images/putri/ilus-mtq.PNG" alt="">
+                                    </div>
+                                    <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                        <a class="btn-card ">
+                                            <h5 class="text-white font-bold">MTQ (Islamic/SMP/SMA)</h5>
+                                            <p class="text-white font-regular text-[10px]">
+                                                Lomba MTQ (Musabaqah Tilawatil Quran) adalah ajang kompetisi membaca Al-Quran untuk mengukir keahlian dan penghafalan ayat suci. <span class="font-bold ">(OFFLINE)</span>.
+                                            </p>
+                                            <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    </div>
+
+                                    <!-- llai -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-llai.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Lomba Lintas Alam Islami (Sport/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba Lintas Alam Islami adalah mengajak peserta menjelajahi keindahan alam sambil memperkuat nilai-nilai Islami melalui kegiatan positif." <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- solo vocal -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/solo-vocal.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Solo Vocal (Art/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba solo vocal adalah kompetisi menyanyi tunggal dengan penilaian vokal, interpretasi, dan ekspresi individu di atas panggung. <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- tapak suci -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/mascot-1 (2).png" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Tapak Suci (Sport/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Tapak suci adalah lomba beladiri yang dilakukan secara individu. Kegiatan ini mengelompokkan sesuai kategori fisik  <span class="font-bold ">(OFFLINE)</span>.
+                                                    
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- hadroh -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl overflow-hidden gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="md:h-80 h:40" src="assets/images/mascot-1 (5).png" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-4 py-6 bg-gray-300 bg-opacity-75  rounded-2xl">
+                                            <a class="btn-card">
+                                                <h5 class="text-white font-bold">HADROH (Islamic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Hadroh adalah kompetisi yang berisi permainan seni musik berupa hadroh & marawis sebagai pengiring lagu islami <span class="font-bold ">(OFFLINE)</span>
+                                                </p>
+
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                                
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- spelling bee -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-spelling-bee.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Spelling Bee (Linguistik/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Spelling Bee adalah kompetisi ejaan di mana peserta mengeja kata-kata secara lisan untuk memenangkan tantangan ejaan. <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                    <!-- panahan -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md overflow-hidden">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/mascot-1 (4).png" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-4 py-6 bg-gray-300 bg-opacity-75  rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Panahan (Sport/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px] ">
+                                                    Panahan merupakan lomba olahraga yang disunnahkan, dengan cara melepas anak panah untuk mencapai sasaran <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div> 
+                                        
+                                    </div>
+
+                                    <!-- musabaqah hifzil quran -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-mhq.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Musabaqah Hifdzil Quran (Islamic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Quick And Smart adalah kompetisi atau perlombaan dalam membaca Al-Quran dengan indah dan benar <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- dai cilik -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6  rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center xlarge-only-text-justify">
+                                            <img class="h-80" src="assets/images/mascot-1 (3).png" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-4 py-6 bg-gray-300 bg-opacity-75 hover:bg-[#A596C7] rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Dai Cilik (Islamic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Merupakan kompetisi anak usia dini menampilkan pidato/dakwah Islam terbaiknya didepan dewan juri dan murid <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <!-- online -->
+
+                                    <!-- blog -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-blog.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">A Day In My Life (Art/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Video blog kreatif, menggabungkan cerita unik, visual menarik, dan pesan inspiratif. Menyajikan konten yang memikat untuk memenangkan lomba <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- kaligrafi -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-kaligrafi.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Kaligrafi (Islamic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba kaligrafi adalah kompetisi seni menulis indah, menggabungkan keindahan estetika dan keterampilan teknis dalam penggunaan huruf <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- cover song -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-cover-jingle.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Cover Song (Art/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba cover song: Ekspresikan bakat musikmu, tampilkan kreativitas dalam mendaur ulang lagu favorit dengan gaya unik dan penuh emosi <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- ilus poster -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-poster.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Digital Poster (Art/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Poster digital kreatif ini menggambarkan inovasi dan solusi untuk masa depan, menarik perhatian dengan desain visual yang menarik <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+                                     
+                                    <!-- Business Plan -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-mtq.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Business Plan (Academic/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Business plan adalah lomba Inovatif, berkelanjutan, dan skalabilitas tinggi. lomba untuk Solusi unik untuk pasar, keuangan mantap, tim berkualitas, dan strategi pemasaran efektif. <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- kir ilmiah -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-kir.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Karya Ilmiah Remaja(Academic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba karya ilmiah mengajak peserta untuk meneliti, menganalisis, dan menyajikan temuan ilmiah dalam format penulisan yang terstruktur dan akurat.<span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- fotografi -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-fotografi.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Fotografi (Art/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Tangkap momen indah dan unik dengan keahlian fotografi Anda, sampaikan cerita melalui lensa kreatif untuk memenangkan hadiah lomba ini <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- Tutur siroh -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-tutur-shiroh.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Tutor Siroh (Islamic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba Tutur Siroh: Berkisah tentang perjalanan hidup penuh hikmah, nilai, dan perjuangan, membangkitkan semangat dan inspirasi dalam kearifan lokal. <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                    <!-- Story Telling -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-putri-asfera.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Story Telling (Linguistic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Sebuah kisah menginspirasi tentang perjalanan pribadi, tantangan, dan pertumbuhan, membawa makna hidup yang mendalam dan berkesan. <span class="font-bold ">(ONLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div x-show="openTab === 2" class="transition-all duration-300 bg-white p-4 rounded-xl" data-aos="zoom-out-up" data-aos-duration="2000">
+                  
+
+                        <!-- Nested tabs within "Tab 2" -->
+                        <div x-data="{ subTab: 10 }" class="">
+                            <div class="mb-4 flex flex-col space-y-2 md:flex-row md:space-x-4 md:space-y-0 bg-white rounded-lg" data-aos="fade-left" data-aos-duration="1000">
+                                <button x-on:click="subTab = 10" :class="{ 'bg-[#39638A] text-white': subTab === 10 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 font-semibold">ALL (SEMUA)</button>
+                                
+                                <button x-on:click="subTab = 11" :class="{ 'bg-[#39638A] text-white': subTab === 11 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 font-semibold">SMA</button>
+                                <button x-on:click="subTab = 12" :class="{ 'bg-[#39638A] text-white': subTab === 12 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 font-semibold">SMP/SMA</button>
+                                
+                            </div>
+
+                            <!-- Content for nested tabs within "Tab 2" -->
+                            <div x-show="subTab === 10" class="transition-all duration-300 bg-white p-4 border-l-4 rounded-xl" data-aos="zoom-out-up" data-aos-duration="2000">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-x-2 gap-y-4 overflow-hidden">
+                                    <!-- Quick and Smart -->
+                                    <div class="my-card-competition flex flex-col px-4 py-6 bg-[#A596C7] rounded-2xl gap-y-4 items-center transition-transform duration-300 ease-in-out hover:bg-white shadow-md">
+                                        <div class="img-card text-center items-center justify-center">
+                                            <img class="h-80" src="assets/images/putri/ilus-mtq.PNG" alt="">
+                                        </div>
+                                        <div class="describe-card w-full px-7 py-6 bg-gray-300 bg-opacity-75 rounded-2xl">
+                                            <a class="btn-card ">
+                                                <h5 class="text-white font-bold">Aksa Vlog (Academic/SMP/SMA)</h5>
+                                                <p class="text-white font-regular text-[10px]">
+                                                    Lomba Cepat dan Cerdas adalah lomba yang mendorong peserta menunjukkan pemecahan masalah cepat dan pengambilan keputusan cerdas dalam berbagai situasi untuk meraih kemenangan <span class="font-bold ">(OFFLINE)</span>.
+                                                </p>
+                                                <div class="hidden buttons-container justify-between md:flex-row flex-col text-center mt-4">
+                                                    <a href="" target="_blank" class="btn-juknis hover:bg-[#39638A] hover:font-bold text-[#FFF] text-[12px] border-2 py-2 px-2 rounded-2xl md:mb-0">Rulebook</a>
+                                                    <a href="" target="_blank" class="btn-registration text-[#FFF] text-[12px] hover:font-bold hover:bg-white hover:text-[#39638A] border-2 py-2 px-2 rounded-2xl">Join Now</a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div x-show="subTab === 11" class="transition-all duration-300 bg-white p-4 border-l-4 rounded-xl" data-aos="zoom-out-up" data-aos-duration="2000">
+                                <p>This is the content for Sub Tab 2.2.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript to toggle the visibility of buttons on hover
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.my-card-competition');
+    
+            cards.forEach(function (card) {
+                card.addEventListener('mouseenter', function () {
+                    const buttonsContainer = card.querySelector('.buttons-container');
+                    if (buttonsContainer) {
+                        buttonsContainer.classList.remove('hidden');
+                    }
+                });
+    
+                card.addEventListener('mouseleave', function () {
+                    const buttonsContainer = card.querySelector('.buttons-container');
+                    if (buttonsContainer) {
+                        buttonsContainer.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    
+    <!-- tab competition -->
+    <script src="assets/javascript/tab-competititon.js">
+    </script>
+
+    <!-- modal -->
+    <script src="assets/javascript/modal.js">
+    </script>
+
+    <!-- owl carousel -->
+    <script src="assets/javascript/owl-carousel.js">
+        
+    </script>
+
+</body>
+</html>

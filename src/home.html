@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Montserrat:wght@300;400;500;600;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./assets/plugin/xZoom-master/dist/xzoom.css" media="all" />
+   <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include FancyBox CSS and JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body class="font-[Montserrat] bg-white">
+    <nav class="flex flex-row max-w-6xl mx-auto justify-between items-center py-8 px-5 mb-8 "  data-aos="zoom-in" data-aos-duration="1000"   data-aos-delay="50">
+        <a href="index.html">
+            <img src="assets/images/logo.png" alt="" width="50px">
+        </a>
+        <a href="index.html" class="text-base text-black font-bold">
+            Asfera ©2023/2034
+        </a>
+        <button id="openModal" class="btn-modal modal-open bg-transparent">
+            <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0.5" width="70" height="5" fill="black"/>
+                <rect y="16.5" width="70" height="5" fill="black"/>
+            </svg>
+                
+        </button>
+
+    </nav>
+
+    <div class="modal opacity-0 pointer-events-none fixed w-full h-full z-[999] top-0 left-0 flex items-center justify-center" >
+        <div class="modal-overlay absolute w-full h-full bg-[#39638A] opacity-95"></div>
+        
+        <div class="modal-container fixed w-full h-full z-50 overflow-y-auto items-center">
+            
+            <!-- navbar -->
+            <nav class=" transition ease-in-out delay-150 flex flex-row max-w-6xl mx-auto justify-between items-center py-8 px-5 mb-8" data-aos="fade-up" data-aos-duration="1000"   data-aos-delay="50">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="" width="50px">
+                </a>
+                <a href="index.html" class="text-white text-base font-semibold">
+                    Asfera ©2023/2034
+                </a>
+                <button id="openModal" class="btn-modal modal-open bg-transparent">
+                    <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.5" width="70" height="5" fill="white"/>
+                        <rect y="16.5" width="70" height="5" fill="white"/>
+                    </svg>
+                        
+                        
+                </button>
+
+            </nav>
+        
+            <!-- Add margin if you want to see grey behind the modal-->
+            <div class="modal-content justify-center mx-auto h-auto text-center py-8 flex flex-col items-center ">
+            
+            <!--Title-->
+                <div class=" items-center pb-2 md:py-35 py-30">
+                    <ul class="flex flex-col gap-y-4">
+                        <li>
+                            <a href="index.html" class="md:text-6xl text-5xl text-white font-semibold font-['Poppins'] " data-aos="flip-right" data-aos-duration="1000">Home</a>
+                        </li>
+                        <li>
+                            <a href="merchandise.html" class="md:text-6xl text-5xl text-white font-semibold font-['Poppins'] " data-aos="flip-right" data-aos-duration="1000">Merchandise</a>
+                        </li>
+                        <li>
+                            <a href="homestay.html" class="md:text-6xl text-5xl text-white font-semibold font-['Poppins'] " data-aos="flip-right" data-aos-duration="1000">Homestay</a>
+                        </li>
+                        <li>
+                            <a href="competition.html" class="md:text-6xl text-5xl text-white font-semibold font-['Poppins'] " data-aos="flip-right" data-aos-duration="1000">Competition</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html" class="md:text-6xl text-5xl text-white font-semibold font-['Poppins'] " data-aos="flip-right" data-aos-duration="1000">Contact Us</a>
+                        </li>
+                    </ul>
+                
+                </div>          
+        
+            </div>
+        </div>
+    </div>
+
+    <section class="about flex flex-col max-w-6xl mx-auto py-10"  data-aos="fade-down" data-aos-duration="2000">
+        <h1 class="lg:text-8xl md:text-6xl text-5xl text-center text-black-400 font-regular leading-tight font-['Inria_Sans']">
+            MYRIAD OF DHIYA
+            <br>
+            <span class="font-bold">Generate</span>
+            <span class="ml-1 font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#59A5FF] via-[#9AC3F6] to-[#E7F1EC]">Supernova</span>
+        </h1>
+        
+        <div class="text-center mt-20 px-5" data-aos="fade-right" data-aos-duration="1000">
+            <iframe class="w-full md:w-full h-96 md:h-screen" src="https://www.youtube.com/embed/TshPYHFmiww?si=0F0N8SjyWfplYRFG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+        </div>
+
+        <div class="flex md:flex-row flex-col mx-auto justify-between items-center px-5 py-8">
+            <div class="flex flex-col items-center text-center justify-center">
+                <img src="assets/images/logo-out.png" alt="" class="w-1/2">
+            </div>
+
+            <div class="flex flex-col"> 
+                <p class="font-['Inria_Sans'] lg:text-xl md:text-md sm:text-xl leading-1 font-semibold text-justify">
+                    As-Syifa Festival Raya atau Asfera adalah kegiatan eksternal tahunan kolaborasi pertama dari hasil unifikasi 3 kampus SMAIT As-Syifa Boarding School. Sebelumnya, kegiatan eksternal tahunan diadakan dari masing-masing kampus SMAIT As-Syifa Boarding School yaitu Assyifa Festival (SYIFEST) dan Assyifa League Festival (ALFEST).
+                    <br>
+                    Selain ragam lomba yang diadakan, kami juga menghadirkan kegiatan guna menciptakan generasi berkualitatif seperti seminar dan webinar yang dapat dihadiri oleh seluruh peserta dan masyarakat luas.
+                </p>
+            </div>
+        </div>
+
+        <hr class="my-4  border-t-2 mt-8">
+
+
+    </section>
+
+    
+    <section class="event-timeline flex flex-row max-w-6xl jus mx-auto py-4 ">
+        <div class="flex flex-row items-center gap-x-24">
+            <div class="flex flex-row items-center">
+                <h1 class="font-['Inria_Sans'] text-3xl md:text-4xl lg:text-5xl ">
+                    TIMELINE<br>
+                    EVENT.
+                </h1>
+                <img src="./assets/images/timeline.png" class="mt-6" alt="" width="60%">
+            </div>
+        </div>
+    </section>
+  
+
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="assets/plugin/jquery/jquery-3-5-1.slim.min.js"></script>
+
+    <script src="assets/plugin/xZoom-master/dist/xzoom.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize xZoom
+            $('.xzoom, .xzoom-gallery').xzoom();
+        });
+    </script>
+
+    <script>
+        var currentIndex = 0;
+        var images = [
+            "assets/images/gallery-2.png",
+            "assets/images/gallery.png",
+            "assets/images/gallery-3.png",
+            "assets/images/gallery-4.png",
+            "assets/images/gallery-5.png",
+            "assets/images/gallery-6.png"
+        ];
+    
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateGallery();
+        }
+    
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateGallery();
+        }
+    
+        function updateGallery() {
+            var galleryContainer = document.getElementById("galleryContainer");
+            galleryContainer.innerHTML = '';
+    
+            for (var i = 0; i < images.length; i++) {
+                var img = document.createElement("img");
+                img.className = "h-full w-auto aspect-video rounded-sm object-cover object-center dark:bg-gray-500 gap-x-4"; // Add gap-x-4 here
+                img.src = images[(currentIndex + i) % images.length];
+                galleryContainer.appendChild(img);
+            }
+        }
+    </script>
+    
+    <!-- modal -->
+    <script>
+        var openmodal = document.querySelectorAll('.modal-open');
+        for (var i = 0; i < openmodal.length; i++) {
+        openmodal[i].addEventListener('click', function (event) {
+            event.preventDefault();
+            toggleModal();
+        });
+        }
+
+        const overlay = document.querySelector('.modal-overlay');
+        overlay.addEventListener('click', toggleModal);
+
+        var closemodal = document.querySelectorAll('.modal-close');
+        for (var i = 0; i < closemodal.length; i++) {
+        closemodal[i].addEventListener('click', toggleModal);
+        }
+
+        document.onkeydown = function (evt) {
+        evt = evt || window.event;
+        var isEscape = false;
+        if ("key" in evt) {
+            isEscape = (evt.key === "Escape" || evt.key === "Esc");
+        } else {
+            isEscape = (evt.keyCode === 27);
+        }
+        if (isEscape && document.body.classList.contains('modal-active')) {
+            toggleModal();
+        }
+        };
+
+        function toggleModal() {
+            console.log('gagal error');
+        const body = document.querySelector('body');
+        const modal = document.querySelector('.modal');
+        modal.classList.toggle('opacity-0');
+        modal.classList.toggle('pointer-events-none');
+        body.classList.toggle('modal-active');
+        }
+    </script>
+  
+    <script>
+
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 25, 2023 00:00:00").getTime();
+    
+        // Update the countdown every 1 second
+        var x = setInterval(function() {
+    
+            // Get the current date and time
+            var now = new Date().getTime();
+    
+            // Calculate the remaining time
+            var distance = countDownDate - now;
+    
+            // Calculate days, hours, minutes, and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+            // Display the countdown
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+    
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

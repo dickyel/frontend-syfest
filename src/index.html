@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Montserrat:wght@300;400;500;600;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./assets/plugin/xZoom-master/dist/xzoom.css" media="all" />
+   <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include FancyBox CSS and JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+
+    <!-- Include Magnific Popup CSS and JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    
+
+</head>
+<body class="font-[Montserrat] bg-[#39638A]">
+    <nav class="flex flex-row max-w-6xl mx-auto justify-between items-center py-8 px-5 mb-8 overflow-hidden"  data-aos="zoom-in" data-aos-duration="1000"   data-aos-delay="50">
+        <a href="index.html">
+            <img src="assets/images/logo.png" alt="" width="50px">
+        </a>
+        <a href="index.html" class="text-base text-white font-bold">
+            Asfera ©2023/2034
+        </a>
+        <button id="openModal" class="btn-modal modal-open bg-transparent">
+            <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0.5" width="70" height="5" fill="white"/>
+                <rect y="16.5" width="70" height="5" fill="white"/>
+            </svg>
+                
+        </button>
+
+    </nav>
+
+    <!-- modal pop up  -->
+    <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-[999] overflow-hidden">
+        <div class="modal-overlay absolute w-full h-full bg-[#39638A] opacity-95"></div>
+        
+        <div class="modal-container fixed w-full h-full z-50 overflow-y-auto items-center">
+            
+            <!-- navbar -->
+            <nav class="flex flex-row max-w-6xl mx-auto justify-between items-center py-8 px-5 mb-8">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="" width="50px">
+                </a>
+               
+                <button id="openModal" class="btn-modal modal-open bg-transparent">
+                    <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.5" width="70" height="5" fill="white"/>
+                        <rect y="16.5" width="70" height="5" fill="white"/>
+                    </svg>
+                        
+                        
+                </button>
+
+            </nav>
+        
+            <!-- menu -->
+            <div class="modal-content justify-center mx-auto h-auto text-center py-8 flex flex-col items-center ">
+            
+            <!-- navigasi -->
+            <div class=" items-center pb-2 py-20">
+                <ul class="flex flex-col gap-y-4">
+                    <li>
+                        <a href="index.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Home</a>
+                    </li>
+                    <li>
+                        <a href="merchandise.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Merchandise</a>
+                    </li>
+                    <li>
+                        <a href="homestay.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Homestay</a>
+                    </li>
+                    <li>
+                        <a href="competition.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Competition</a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Contact Us</a>
+                    </li>
+                </ul>
+                
+            </div>
+        
+            </div>
+        </div>
+    </div>
+
+
+    <!-- about -->
+    <section class="about flex flex-col max-w-6xl mx-auto py-8 overflow-hidden"  data-aos="fade-down" data-aos-duration="2000">
+        <h1 class="lg:text-8xl md:text-6xl text-5xl text-center text-white font-regular leading-tight font-['Inria_Sans']">
+            MYRIAD OF DHIYA
+            <br>
+            <span class="font-bold">Generate</span>
+            <span class="ml-1 font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#59A5FF] via-[#9AC3F6] to-[#E7F1EC]">Supernova</span>
+        </h1>
+        
+        <div class="text-center mt-20 px-5" data-aos="fade-right" data-aos-duration="1000">
+            <iframe class="w-full md:w-full h-96 md:h-screen border-8 rounded-2xl" src="https://www.youtube.com/embed/yAoLSRbwxL8?si=UV1jJqFFlqKRiOqa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           
+        </div>
+
+        <div class="flex md:flex-row flex-col mx-auto justify-between items-center px-4 py-8 gap-y-8" >
+            <div class="flex flex-col items-center text-center justify-center" data-aos="fade-left" data-aos-duration="1000">
+                <img src="assets/images/logo-out.png" alt="" class="w-1/2">
+                <p class="text-white text-2xl font-bold">
+                    As- Syfa Festival Raya 
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center" data-aos="fade-left" data-aos-duration="1000"> 
+                <p class="font-['Inria_Sans'] lg:text-xl md:text-md sm:text-xl leading-1 font-semibold text-justify text-white mt-">
+                    As-Syifa Festival Raya atau Asfera adalah kegiatan eksternal tahunan kolaborasi pertama dari hasil unifikasi 3 kampus SMAIT As-Syifa Boarding School. Sebelumnya, kegiatan eksternal tahunan diadakan dari masing-masing kampus SMAIT As-Syifa Boarding School yaitu Assyifa Festival (SYIFEST) dan Assyifa League Festival (ALFEST).
+                    <br>
+                    Selain ragam lomba yang diadakan, kami juga menghadirkan kegiatan guna menciptakan generasi berkualitatif seperti seminar dan webinar yang dapat dihadiri oleh seluruh peserta dan masyarakat luas.
+                </p>
+            </div>
+        </div>
+        <hr class="my-4  border-t-2 mt-8">
+    </section>
+
+    <!-- timeline -->
+    <section class="timeline max-w-6xl mx-auto  px-5 py-14 overflow-hidden" data-aos="fade-up" data-aos-duration="2000">
+        <div class="flex md:flex-row flex-col items-center gap-x-28 ">
+            
+            <div class="flex flex-col ">
+                <h1 class="text-white font-['Inria_Sans'] text-5xl leading-none text-left">
+                    TIMELINE<br>
+                    EVENT
+                </h1>
+                <img src="assets/images/illustration_2.png" alt="" class="w-[550px]" data-aos="fade-left" data-aos-duration="3000">
+            </div>
+            
+            <div class="flex flex-col gap-y-12 mt-20">
+                
+                <div class="flex flex-col gap-y-5">
+
+                    <!-- open registration -->
+                    <div class="card-timeline flex flex-row bg-white rounded-2xl p-5 items-center gap-x-6" data-aos="fade-right" data-aos-duration="2000">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M41.8334 40.5H8.16671C7.20837 40.5 6.45837 39.75 6.45837 38.7917V23.9583C6.45837 23 7.20837 22.25 8.16671 22.25H41.7917C42.75 22.25 43.5 23 43.5 23.9583V38.7917C43.5417 39.7083 42.75 40.5 41.8334 40.5Z" fill="#00CB72"/>
+                            <path opacity="0.1" d="M42.7084 40.0834H9.37504C8.33337 40.0834 7.50004 39.25 7.50004 38.2084V23.6667C7.50004 23.0834 7.79171 22.5834 8.20837 22.2084C7.25004 22.25 6.45837 23.0834 6.45837 24.0834V38.625C6.45837 39.6667 7.29171 40.5 8.33337 40.5H41.6667C42.125 40.5 42.5417 40.3334 42.8334 40.0834C42.7917 40.0834 42.75 40.0834 42.7084 40.0834Z" fill="black"/>
+                            <path d="M23.75 13.9583L15.4584 22.25H17.375L25 14.625L32.625 22.25H34.5417L26.25 13.9583C26.9167 13.5417 27.4167 12.7917 27.4167 11.9167C27.4167 10.5833 26.3334 9.5 25 9.5C23.6667 9.5 22.5834 10.5833 22.5834 11.9167C22.5834 12.7917 23.0417 13.5417 23.75 13.9583ZM25 10.875C25.5834 10.875 26.0417 11.3333 26.0417 11.9167C26.0417 12.5 25.5834 12.9583 25 12.9583C24.4167 12.9583 23.9584 12.5 23.9584 11.9167C23.9584 11.3333 24.4167 10.875 25 10.875Z" fill="#009A64"/>
+                            <path d="M17.3334 28.875C17 28.5416 16.5834 28.3333 16.125 28.1666C15.6667 28 15.1667 27.9166 14.625 27.9166C14.0834 27.9166 13.5834 28 13.125 28.1666C12.6667 28.3333 12.25 28.5833 11.9167 28.875C11.5834 29.2083 11.3334 29.5416 11.125 29.9583C10.9584 30.375 10.8334 30.8333 10.8334 31.3333C10.8334 31.8333 10.9167 32.2916 11.125 32.7083C11.2917 33.125 11.5834 33.5 11.9167 33.8333C12.25 34.1666 12.6667 34.375 13.125 34.5416C13.5834 34.7083 14.0834 34.7916 14.625 34.7916C15.1667 34.7916 15.6667 34.7083 16.125 34.5416C16.5834 34.375 16.9584 34.125 17.3334 33.8333C17.6667 33.5 17.9167 33.1666 18.125 32.7083C18.2917 32.2916 18.4167 31.8333 18.4167 31.3333C18.4167 30.8333 18.3334 30.375 18.125 29.9583C17.9167 29.5416 17.6667 29.1666 17.3334 28.875ZM16 32.0416C15.9167 32.25 15.8334 32.4166 15.6667 32.5833C15.5417 32.7083 15.375 32.8333 15.2084 32.9166C15.0417 33 14.8334 33.0416 14.625 33.0416C14.4167 33.0416 14.2084 33 14.0417 32.9166C13.875 32.8333 13.7084 32.75 13.5834 32.5833C13.4584 32.4583 13.3334 32.25 13.25 32.0416C13.1667 31.8333 13.125 31.5833 13.125 31.3333C13.125 31.0833 13.1667 30.8333 13.25 30.625C13.3334 30.4166 13.4167 30.25 13.5834 30.0833C13.7084 29.9583 13.875 29.8333 14.0417 29.75C14.2084 29.6666 14.4167 29.625 14.625 29.625C14.8334 29.625 15.0417 29.6666 15.2084 29.75C15.375 29.8333 15.5417 29.9166 15.6667 30.0833C15.7917 30.2083 15.9167 30.4166 16 30.625C16.0834 30.8333 16.125 31.0833 16.125 31.3333C16.125 31.625 16.0834 31.875 16 32.0416Z" fill="white"/>
+                            <path d="M24.0001 28.3333C23.5417 28.125 23.0001 28.0416 22.3751 28.0416H19.1667V34.7083H21.4167V33.0833H22.3751C23.0001 33.0833 23.5417 33 24.0001 32.7916C24.4584 32.5833 24.7917 32.2916 25.0417 31.9166C25.2917 31.5416 25.4167 31.0833 25.4167 30.5833C25.4167 30.0833 25.2917 29.625 25.0417 29.25C24.8334 28.8333 24.4584 28.5416 24.0001 28.3333ZM22.9584 31.125C22.7917 31.25 22.5834 31.3333 22.2501 31.3333H21.4167V29.7916H22.2501C22.5417 29.7916 22.7917 29.875 22.9584 30C23.1251 30.125 23.1667 30.3333 23.1667 30.5833C23.1667 30.7916 23.0834 30.9583 22.9584 31.125Z" fill="white"/>
+                            <path d="M28.3751 32.125H31.2084V30.5H28.3751V29.7083H31.5834V28.0416H26.1667V34.7083H31.7084V33H28.3751V32.125Z" fill="white"/>
+                            <path d="M36.9584 28.0416V31.0416L34.4167 28.0416H32.5834V34.7083H34.75V31.6666L37.2917 34.7083H39.125V28.0416H36.9584Z" fill="white"/>
+                        </svg>    
+                            
+                        <div class="flex flex-col gap-y-1">
+                            <h3 class="font-bold text-xl text-indigo-950">OPEN REGISTRATION</h3>
+                            <p class=" text-base leading-relaxe text-gray-500">
+                                25 December 2023
+                            </p>
+                        </div>
+                            
+                    </div>
+
+                    <!-- close registrarion -->
+    
+                    <div class="card-timeline flex flex-row bg-white rounded-2xl p-5 items-center gap-x-6" data-aos="fade-left" data-aos-duration="2000">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M43.75 26.562C43.75 25.7341 43.4203 24.9382 42.8344 24.3526C42.2484 23.7671 41.4531 23.4373 40.625 23.4373C33.5625 23.4373 16.4375 23.4373 9.375 23.4373C8.54688 23.4373 7.75156 23.7671 7.16562 24.3526C6.57969 24.9382 6.25 25.7341 6.25 26.562C6.25 30.7199 6.25 38.0295 6.25 42.1874C6.25 43.0153 6.57969 43.8112 7.16562 44.3968C7.75156 44.9824 8.54688 45.3122 9.375 45.3122C16.4375 45.3122 33.5625 45.3122 40.625 45.3122C41.4531 45.3122 42.2484 44.9824 42.8344 44.3968C43.4203 43.8112 43.75 43.0153 43.75 42.1874C43.75 38.0295 43.75 30.7199 43.75 26.562Z" fill="#90E0EF"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.8969 8.51719L13.1625 21.875H9.375C8.13125 21.875 6.93906 22.3688 6.06093 23.2484C5.18125 24.1266 4.6875 25.3187 4.6875 26.5625V42.1875C4.6875 43.4313 5.18125 44.6234 6.06093 45.5016C6.93906 46.3813 8.13125 46.875 9.375 46.875C16.4375 46.875 33.5625 46.875 40.625 46.875C41.8688 46.875 43.0609 46.3813 43.9391 45.5016C44.8188 44.6234 45.3125 43.4313 45.3125 42.1875V26.5625C45.3125 25.3187 44.8188 24.1266 43.9391 23.2484C43.0609 22.3688 41.8688 21.875 40.625 21.875H36.1422L29.0906 8.53906C29.4703 7.8625 29.6875 7.08125 29.6875 6.25C29.6875 3.6625 27.5875 1.5625 25 1.5625C22.4125 1.5625 20.3125 3.6625 20.3125 6.25C20.3125 7.07188 20.525 7.84531 20.8969 8.51719ZM9.375 25H40.625C41.0391 25 41.4375 25.1641 41.7297 25.4578C42.0234 25.75 42.1875 26.1484 42.1875 26.5625V42.1875C42.1875 42.6016 42.0234 43 41.7297 43.2922C41.4375 43.5859 41.0391 43.75 40.625 43.75H9.375C8.96094 43.75 8.5625 43.5859 8.27031 43.2922C7.97656 43 7.8125 42.6016 7.8125 42.1875V26.5625C7.8125 26.1484 7.97656 25.75 8.27031 25.4578C8.5625 25.1641 8.96094 25 9.375 25ZM25 32.1656L21.4172 28.5828C20.8078 27.9734 19.8172 27.9734 19.2078 28.5828C18.5984 29.1922 18.5984 30.1828 19.2078 30.7922L22.7906 34.375L19.2078 37.9578C18.5984 38.5672 18.5984 39.5578 19.2078 40.1672C19.8172 40.7766 20.8078 40.7766 21.4172 40.1672L25 36.5844L28.5828 40.1672C29.1922 40.7766 30.1828 40.7766 30.7922 40.1672C31.4016 39.5578 31.4016 38.5672 30.7922 37.9578L27.2094 34.375L30.7922 30.7922C31.4016 30.1828 31.4016 29.1922 30.7922 28.5828C30.1828 27.9734 29.1922 27.9734 28.5828 28.5828L25 32.1656ZM23.2922 10.6156L16.7734 21.875H32.6078L26.6625 10.6328C26.1469 10.8297 25.5859 10.9375 25 10.9375C24.3984 10.9375 23.8219 10.8234 23.2922 10.6156ZM25 4.6875C25.8625 4.6875 26.5625 5.3875 26.5625 6.25C26.5625 7.1125 25.8625 7.8125 25 7.8125C24.1375 7.8125 23.4375 7.1125 23.4375 6.25C23.4375 5.3875 24.1375 4.6875 25 4.6875Z" fill="#1990A7"/>
+                        </svg>
+                                
+                        <div class="flex flex-col gap-y-1">
+                            <h3 class="font-bold text-xl text-indigo-950">CLOSE REGISTRATION</h3>
+                            <p class=" text-base leading-relaxe text-gray-500">
+                               7 FEBRUARY 2024
+                            </p>
+                        </div>
+                            
+                    </div>
+
+                    <!-- technical meeting -->
+    
+                    <div class="card-timeline flex flex-row bg-white rounded-2xl p-5 items-center gap-x-3" data-aos="fade-right" data-aos-duration="2000">
+                        <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_41_507)">
+                            <path d="M33.1434 48.8835H18.4872C16.4152 48.8835 14.428 48.0604 12.9629 46.5953C11.4978 45.1302 10.6747 43.1431 10.6747 41.071V10.0398C10.6747 7.96779 11.4978 5.98065 12.9629 4.51552C14.428 3.0504 16.4152 2.22729 18.4872 2.22729H33.1434C35.2154 2.22729 37.2026 3.0504 38.6677 4.51552C40.1328 5.98065 40.9559 7.96779 40.9559 10.0398V41.071C40.9559 43.1431 40.1328 45.1302 38.6677 46.5953C37.2026 48.0604 35.2154 48.8835 33.1434 48.8835ZM18.4872 5.35229C17.244 5.35229 16.0517 5.84616 15.1726 6.72523C14.2935 7.60431 13.7997 8.79659 13.7997 10.0398V41.071C13.7997 42.3143 14.2935 43.5065 15.1726 44.3856C16.0517 45.2647 17.244 45.7585 18.4872 45.7585H33.1434C34.3866 45.7585 35.5789 45.2647 36.458 44.3856C37.3371 43.5065 37.8309 42.3143 37.8309 41.071V10.0398C37.8309 8.79659 37.3371 7.60431 36.458 6.72523C35.5789 5.84616 34.3866 5.35229 33.1434 5.35229H18.4872Z" fill="#02A0E1"/>
+                            <path d="M32.2997 43.2429H19.3309C18.9165 43.2429 18.5191 43.0783 18.2261 42.7853C17.9331 42.4922 17.7684 42.0948 17.7684 41.6804C17.7684 41.266 17.9331 40.8686 18.2261 40.5756C18.5191 40.2825 18.9165 40.1179 19.3309 40.1179H32.2997C32.7141 40.1179 33.1115 40.2825 33.4045 40.5756C33.6976 40.8686 33.8622 41.266 33.8622 41.6804C33.8622 42.0948 33.6976 42.4922 33.4045 42.7853C33.1115 43.0783 32.7141 43.2429 32.2997 43.2429Z" fill="#02A0E1"/>
+                            <path d="M29.5028 8.96167H22.0341C21.6572 8.96593 21.2916 8.83386 21.0044 8.5898C20.7173 8.34574 20.5281 8.00613 20.4716 7.63355L19.6278 3.78979H31.9403L30.9872 7.68042C30.9232 8.03134 30.741 8.3498 30.471 8.58288C30.201 8.81596 29.8593 8.94962 29.5028 8.96167Z" fill="#BDEEFF"/>
+                            <path d="M29.5028 10.5242H22.0341C21.3097 10.5186 20.6098 10.2615 20.0541 9.79694C19.4983 9.33237 19.1212 8.68917 18.9872 7.9773L18.1434 4.13355C18.0896 3.90412 18.0883 3.66547 18.1397 3.43547C18.1911 3.20547 18.2939 2.99008 18.4403 2.80543C18.5874 2.62415 18.7732 2.47812 18.9841 2.37807C19.195 2.27803 19.4256 2.22651 19.6591 2.2273H31.9716C32.2063 2.22839 32.4377 2.28233 32.6487 2.38512C32.8597 2.48791 33.0448 2.63691 33.1903 2.82105C33.3391 3.00751 33.4432 3.22556 33.4947 3.45849C33.5461 3.69141 33.5436 3.93302 33.4872 4.1648L32.5341 8.05543C32.3848 8.75029 32.0032 9.37353 31.4521 9.82233C30.9011 10.2711 30.2135 10.5187 29.5028 10.5242ZM21.6903 5.3523L22.1122 7.2898L29.5184 7.39918L30.0341 5.3523H21.6903Z" fill="#02A0E1"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_41_507">
+                            <rect width="50" height="50" fill="white" transform="translate(0.815308 0.55542)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                            
+                            
+                        <div class="flex flex-col gap-y-1">
+                            <h3 class="font-bold text-xl text-indigo-950">TECHNICAL MEETING</h3>
+                            <p class=" text-base leading-relaxe text-gray-500">
+                               15 FEBRUARY 2023
+                            </p>
+                        </div>
+                            
+                    </div>
+
+                    <!-- day competititon -->
+    
+                    <div class="card-timeline flex flex-row bg-white rounded-2xl p-5 items-center gap-x-3" data-aos="fade-left" data-aos-duration="2000">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M33.75 0V22.5L24.5833 29.1667H25L35.6666 22.9167C36 22.6667 36.25 22.25 36.25 21.75V1.5833C36.25 0.75 35.5833 0.0833008 34.75 0.0833008H33.75V0Z" fill="#FFDD09"/>
+                            <path d="M31.25 42.5001L34.5833 39.1667L31.25 36.6667V32.5H27.0833L24.5833 29.1667L22.0833 32.5H17.9167V35.8334L14.5833 39.1667L17.9167 42.1667V45.8334H22.0833L24.5833 49.1667L27.0833 45.8334H31.25V42.5001Z" fill="#FFDD09"/>
+                            <path d="M27.9167 39.1668C27.9167 37.3335 26.4167 35.8335 24.5834 35.8335C22.7501 35.8335 21.2501 37.3335 21.2501 39.1668C21.2501 41.0001 22.7501 42.5001 24.5834 42.5001C26.4167 42.5001 27.9167 41.0001 27.9167 39.1668Z" fill="#54C9FD"/>
+                            <path d="M17.9167 9.99995V0.833252H31.25V22.5L24.1667 29.1667H25L17.9167 22.5V15V9.99995Z" fill="#FFDD09"/>
+                            <path d="M17.9167 15V9.99995V0.833252H15.4167V9.99995V15V22.5L24.5833 29.1667H25L17.9167 22.5V15Z" fill="white"/>
+                            <path d="M31.25 0.833252V22.5L24.1667 29.1667H24.5834L33.75 22.5V0.833252H31.25Z" fill="#FD9808"/>
+                            <path d="M24.5833 29.1667L27.9167 26.6667V0.833252H21.25V26.6667L24.5833 29.1667Z" fill="#54C9FD"/>
+                            <path d="M24.5833 30C24.4166 30 24.25 29.9167 24.0833 29.8333L14.9166 23.1666C14.7499 23.0833 14.5833 22.8333 14.5833 22.4999V12.5C14.5833 12 14.9166 11.6667 15.4166 11.6667C15.9166 11.6667 16.2499 12 16.2499 12.5V22.0833L24.5832 28.1666L32.9165 22.0833V1.66672H16.25V5.83342C16.25 6.33342 15.9167 6.66672 15.4167 6.66672C14.9167 6.66672 14.5834 6.33342 14.5834 5.83342V0.833423C14.5834 0.333423 14.9167 0.00012207 15.4167 0.00012207H33.75C34.25 0.00012207 34.5833 0.333423 34.5833 0.833423V22.5C34.5833 22.75 34.4166 23 34.25 23.1667L25.0833 29.8334C24.9167 30 24.75 30 24.5833 30Z" fill="#110E0E"/>
+                            <path d="M16.25 9.16667C16.25 8.66667 15.9167 8.33337 15.4167 8.33337C14.9167 8.33337 14.5834 8.66667 14.5834 9.16667C14.5834 9.66667 14.9167 9.99998 15.4167 9.99998C15.9167 9.99998 16.25 9.66667 16.25 9.16667Z" fill="#110E0E"/>
+                            <path d="M24.5833 30C24.4167 30 24.25 29.9167 24.0833 29.8333L20.75 27.4166C20.5833 27.2499 20.4167 26.9999 20.4167 26.7499V0.833301C20.4167 0.333301 20.75 0 21.25 0H27.9167C28.4167 0 28.75 0.333301 28.75 0.833301V26.75C28.75 27 28.5833 27.25 28.4167 27.4167L25.0834 29.8334C24.9167 30 24.75 30 24.5833 30ZM22.0833 26.3333L24.5833 28.1666L27.0833 26.3333V1.6667H22.0833V26.3333Z" fill="#110E0E"/>
+                            <path d="M24.5833 50C24.3333 50 24.0833 49.9167 23.9166 49.6667L21.6666 46.6667H17.9166C17.4166 46.6667 17.0833 46.3334 17.0833 45.8334V42.5L14 39.75C13.8333 39.6667 13.75 39.4167 13.75 39.25C13.75 39.0833 13.8333 38.8333 14 38.6666L17.0833 35.5V32.5C17.0833 32 17.4166 31.6667 17.9166 31.6667H21.6666L23.9166 28.6667C24.2499 28.25 24.9166 28.25 25.2499 28.6667L27.4999 31.6667H31.25C31.75 31.6667 32.0833 32 32.0833 32.5V36.25L35.0833 38.5C35.25 38.6666 35.4166 38.8333 35.4166 39.0833C35.4166 39.3333 35.3333 39.5833 35.1666 39.75L32.0833 42.8333V45.8333C32.0833 46.3333 31.75 46.6666 31.25 46.6666H27.5L25.25 49.6666C25.0833 49.9167 24.8333 50 24.5833 50ZM18.75 45H22.0833C22.3333 45 22.5833 45.0833 22.75 45.3333L24.5833 47.75L26.4166 45.3333C26.5833 45.0833 26.8333 45 27.0833 45H30.4166V42.5C30.4166 42.25 30.4999 42.0833 30.6666 41.9167L33.3333 39.25L30.75 37.3333C30.5 37.1666 30.4167 36.9166 30.4167 36.6666V33.3333H27.0834C26.8334 33.3333 26.5834 33.25 26.4167 33L24.5834 30.5833L22.75 33C22.5833 33.25 22.3333 33.3333 22.0833 33.3333H18.75V35.8333C18.75 36.0833 18.6667 36.25 18.5 36.4166L15.8333 39.1666L18.5 41.5833C18.6667 41.75 18.75 42 18.75 42.1666V45Z" fill="#110E0E"/>
+                            <path d="M24.5833 43.3334C22.25 43.3334 20.4166 41.5001 20.4166 39.1667C20.4166 36.8334 22.2499 35 24.5833 35C26.9167 35 28.75 36.8333 28.75 39.1667C28.75 41.5001 26.9167 43.3334 24.5833 43.3334ZM24.5833 36.6668C23.1666 36.6668 22.0833 37.7501 22.0833 39.1668C22.0833 40.5835 23.1666 41.6668 24.5833 41.6668C26 41.6668 27.0833 40.5835 27.0833 39.1668C27.0833 37.7501 26 36.6668 24.5833 36.6668Z" fill="#110E0E"/>
+                        </svg>
+ 
+                        <div class="flex flex-col gap-y-1">
+                            <h3 class="font-bold text-xl text-indigo-950">DAY COMPETITION</h3>
+                            <p class=" text-base leading-relaxe text-gray-500">
+                               15 FEBRUARY 2024
+                            </p>
+                        </div>
+                            
+                    </div>
+
+                    <!-- day competititon -->
+    
+                    <div class="card-timeline flex flex-row bg-white rounded-2xl p-5 items-center gap-x-3" data-aos="fade-right" data-aos-duration="2000">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M33.537 9.20169C33.2473 9.99074 32.7301 10.6762 32.0508 11.1713C31.3715 11.6664 30.5607 11.9489 29.7208 11.9832C28.8809 12.0175 28.0498 11.8019 27.3324 11.3638C26.6151 10.9257 26.0437 10.2847 25.6907 9.52188C25.3376 8.75906 25.2187 7.9087 25.3489 7.07829C25.4792 6.24788 25.8528 5.47472 26.4224 4.85663C26.9921 4.23854 27.7322 3.80327 28.5493 3.60583C29.3663 3.4084 30.2236 3.4577 31.0126 3.74747C32.0702 4.1365 32.9302 4.92948 33.4035 5.95218C33.8769 6.97488 33.9249 8.14363 33.537 9.20169Z" fill="#27B7FF"/>
+                            <path d="M48.4364 42.1513C48.2135 43.508 47.4624 44.7212 46.3473 45.5255C45.2322 46.3297 43.844 46.6597 42.4863 46.4431L4.35618 40.2589C3.00035 40.0345 1.78832 39.2829 0.984572 38.1682C0.180829 37.0535 -0.149361 35.6661 0.0660692 34.3088L1.56185 25.0867C1.78475 23.73 2.53589 22.5169 3.65096 21.7126C4.76602 20.9083 6.15423 20.5783 7.51193 20.7949L45.6437 26.9814C46.9998 27.2053 48.2121 27.9568 49.0159 29.0716C49.8197 30.1865 50.1497 31.5741 49.9338 32.9314L48.4364 42.1513Z" fill="#A4D322"/>
+                            <path d="M16.9224 32.3111C16.867 32.8242 16.7095 33.321 16.4593 33.7723C16.209 34.2236 15.871 34.6203 15.4652 34.9391C14.5845 35.4801 13.5388 35.6865 12.5186 35.5209C11.4984 35.3552 10.5717 34.8285 9.90741 34.0367C9.38401 33.1451 9.18809 32.0989 9.35343 31.0784C9.51877 30.0579 10.035 29.127 10.8131 28.4464C11.6945 27.9098 12.7386 27.7058 13.7571 27.8711C14.7757 28.0363 15.7017 28.56 16.3682 29.3477C16.6544 29.7793 16.851 30.264 16.9462 30.7731C17.0414 31.2822 17.0333 31.8052 16.9224 32.3111ZM14.1127 33.7628C14.3388 33.5611 14.521 33.3148 14.6476 33.0395C14.7999 32.706 14.9032 32.3523 14.9545 31.9894C15.0247 31.6097 15.035 31.2214 14.9848 30.8385C14.9475 30.5523 14.8539 30.2763 14.7093 30.0264C14.5853 29.8118 14.4103 29.6311 14.1997 29.5003C13.9961 29.3792 13.772 29.2963 13.5386 29.2557C13.3068 29.2182 13.0701 29.2244 12.8406 29.2738C12.6001 29.3336 12.3761 29.4466 12.185 29.6044C11.9643 29.7996 11.7861 30.0382 11.6616 30.3052C11.4924 30.6518 11.3781 31.0226 11.3228 31.4043C11.2526 31.7806 11.2418 32.1656 11.2908 32.5453C11.3296 32.8336 11.4231 33.1119 11.5663 33.3651C11.6922 33.5759 11.8665 33.7538 12.0748 33.8841C12.28 34.0156 12.5108 34.1024 12.7519 34.1386C12.9901 34.1778 13.2339 34.1677 13.4681 34.1088C13.7083 34.0469 13.9301 33.9282 14.1149 33.7628H14.1127Z" fill="white"/>
+                            <path d="M24.6531 32.1728C24.6008 32.5025 24.4888 32.8199 24.3226 33.1094C24.1708 33.389 23.9597 33.632 23.7039 33.8212C23.3778 34.0572 23.0079 34.2258 22.6158 34.317C22.1615 34.409 21.6938 34.412 21.2384 34.3258L20.0605 34.1313L19.6705 36.5268L17.7764 36.2205L18.9691 28.8727L22.0852 29.379C22.4842 29.4349 22.8748 29.5396 23.2482 29.6908C23.538 29.8132 23.8056 29.9824 24.0405 30.1916C24.2971 30.4224 24.4888 30.7165 24.5964 31.0445C24.7053 31.4106 24.7247 31.7975 24.6531 32.1728ZM22.6896 31.8973C22.7238 31.7063 22.6939 31.5094 22.6048 31.337C22.5288 31.1826 22.412 31.0518 22.267 30.9591C22.0955 30.8544 21.9073 30.7799 21.7106 30.7387C21.5233 30.7007 21.2759 30.6555 20.9646 30.6043L20.6341 30.5492L20.2781 32.7447L20.8203 32.8328C21.088 32.8802 21.3594 32.9028 21.6313 32.9005C21.828 32.9023 22.0216 32.8509 22.1916 32.7518C22.3278 32.6719 22.4397 32.5565 22.5155 32.4179C22.6041 32.2565 22.663 32.0806 22.6896 31.8984V31.8973Z" fill="white"/>
+                            <path d="M30.4936 38.2799L25.1793 37.4171L26.371 30.0737L31.6836 30.9348L31.4539 32.353L28.0271 31.802L27.8205 33.0692L31.0021 33.5854L30.7702 35.0062L27.5897 34.4911L27.2966 36.302L30.7245 36.8601L30.4936 38.2799Z" fill="white"/>
+                            <path d="M38.7604 39.6198L36.9351 39.3245L34.6361 33.7783L33.8158 38.8171L32.0825 38.5372L33.2725 31.1895L35.5352 31.5602L37.534 36.2035L38.2166 31.9921L39.9532 32.2764L38.7604 39.6198Z" fill="white"/>
+                            <path d="M32.8252 10.4435C32.1379 11.2744 31.1617 11.8145 30.0925 11.9552L37.68 25.6889L41.6032 26.328L32.8252 10.4435ZM25.5132 9.08264L10.8804 21.3431L14.9573 22.0043L27.5219 11.4748C26.5746 10.9593 25.8571 10.1048 25.5132 9.08264Z" fill="#F4F4F4"/>
+                            <path d="M10.8804 21.3431L14.9573 22.0043L17.0332 20.2633L12.9563 19.6022L10.8804 21.3431ZM40.3432 24.0427L36.42 23.408L37.68 25.6873L41.6032 26.3263L40.3432 24.0427Z" fill="#C9D1D1"/>
+                        </svg>
+                            
+
+                        <div class="flex flex-col gap-y-1">
+                            <h3 class="font-bold text-xl text-indigo-950">GRAND OPENING</h3>
+                            <p class=" text-base leading-relaxe text-gray-500">
+                               24 FEBRUARY 2024
+                            </p>
+                        </div>
+                            
+                    </div>
+                </div>  
+              
+            </div>
+    
+        </div>
+            
+    </section>
+
+    <!-- even timer -->
+    <section class="event-timer bg-white pt-40 pb-20 px-5 overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-[#39638A] text-center font-bold md:text-8xl text-6xl" data-aos="fade-down" data-aos-duration="2000">WE WILL START IN</h1> 
+            <div class="timer mt-10">
+                <div class="grid md:grid-cols-4 grid-cols-2 gap-x-8 gap-y-4">
+                    <div class="flex-row gap-x-7 card-timer bg-[#3963BA] items-center py-5 px-5 rounded-xl" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="info-timer items-center text-center">
+                            <h1 class="font-bold text-white text-8xl" id="days">--</h1>
+                            <p class="text-2xl font-semibold text-white">HARI</p>
+                        </div>
+                    </div>
+    
+                    <div class="flex-row gap-x-7 card-timer bg-[#3963BA] items-center py-5 px-5 rounded-xl" data-aos="fade-down" data-aos-duration="2000">
+                        <div class="info-timer items-center text-center">
+                            <h1 class="font-bold text-white text-8xl" id="hours">--</h1>
+                            <p class="text-2xl font-semibold text-white">JAM</p>
+                        </div>
+                    </div>
+    
+                    <div class="flex-row gap-x-7 card-timer bg-[#3963BA] items-center py-5 px-5 rounded-xl" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="info-timer items-center text-center">
+                            <h1 class="font-bold text-white text-8xl" id="minutes">--</h1>
+                            <p class="text-2xl font-semibold text-white">MENIT</p>
+                        </div>
+                    </div>
+    
+                    <div class="flex-row gap-x-7 card-timer bg-[#3963BA] items-center py-5 px-5 rounded-xl" data-aos="fade-down" data-aos-duration="2000">
+                        <div class="info-timer items-center text-center">
+                            <h1 class="font-bold text-white text-8xl" id="seconds">--</h1>
+                            <p class="text-2xl font-semibold text-white">DETIK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4  border-t-2 mt-20" data-aos="fade-right" data-aos-duration="2000">
+        </div>
+    </section>
+
+    <!-- event gallery -->
+    <section class="event-gallery bg-white px-5 overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-[#39638A] text-center font-bold text-6xl" data-aos="fade-up" data-aos-duration="2000">
+                EVENT GALLERY
+            </h1>
+            <div class="flex flex-row gap-y-10 mb-20 mt-10 gap-x-8">
+                <div class="owl-carousel owl-theme w-full">
+                    <a href="./assets/images/galery-1.png" data-lightbox="gallery" class="owl-carousel-item-container" data-aos="fade-right" data-aos-duration="2000">
+                        <img src="./assets/images/galery-1.png" alt="" class="owl-carousel-item md:h-80 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
+                        <div class="preview-button">
+                            <button class="bg-transparent text-white font-semibold border-4 hover:bg-[#39638A] hover:font-bold px-4 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                Preview
+                            </button>
+                        </div>
+                    </a>
+                    <!-- Add similar code for other images -->
+                    <a href="./assets/images/galery-2.png" data-lightbox="gallery" class="owl-carousel-item-container" data-aos="fade-right" data-aos-duration="2000">
+                        <img src="./assets/images/galery-2.png" alt="" class="owl-carousel-item md:h-80 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
+                        <div class="preview-button">
+                            <button class="bg-transparent text-white font-semibold border-4 hover:bg-[#39638A] hover:font-bold px-4 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                Preview
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="./assets/images/galery-3.png" data-lightbox="gallery" class="owl-carousel-item-container" data-aos="fade-right" data-aos-duration="2000">
+                        <img src="./assets/images/galery-3.png" alt="" class="owl-carousel-item md:h-80 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
+                        <div class="preview-button">
+                            <button class="bg-transparent text-white font-semibold border-4 hover:bg-[#39638A] hover:font-bold px-4 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                Preview
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="./assets/images/galery-4.png" data-lightbox="gallery" class="owl-carousel-item-container" data-aos="fade-right" data-aos-duration="2000">
+                        <img src="./assets/images/galery-4.png" alt="" class="owl-carousel-item md:h-80 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
+                        <div class="preview-button">
+                            <button class="bg-transparent text-white font-semibold border-4 hover:bg-[#39638A] hover:font-bold px-4 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                Preview
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="./assets/images/galery-5.png" data-lightbox="gallery" class="owl-carousel-item-container" data-aos="fade-right" data-aos-duration="2000">
+                        <img src="./assets/images/galery-5.png" alt="" class="owl-carousel-item md:h-80 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
+                        <div class="preview-button">
+                            <button class="bg-transparent text-white font-semibold border-4 hover:bg-[#39638A] hover:font-bold px-4 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                Preview
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="./assets/images/galery-6.png" data-lightbox="gallery" class="owl-carousel-item-container" data-aos="fade-right" data-aos-duration="2000">
+                        <img src="./assets/images/galery-6.png" alt="" class="owl-carousel-item md:h-80 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
+                        <div class="preview-button">
+                            <button class="bg-transparent text-white font-semibold border-4 hover:bg-[#39638A] hover:font-bold px-4 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                Preview
+                            </button>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- maps -->
+    <section class="maps px-5 py-10 overflow-hidden">
+        <div class="max-w-6xl mx-auto bg-white rounded-2xl mt-20 py-10 px-16 ">
+            <h1 class="text-[#39638A] font-['Inria_Sans'] font-bold text-8xl  text-center mb-10" data-aos="fade-up" data-aos-duration="2000">
+                MAPS
+            </h1>
+            <div class="flex md:flex-row flex-col items-center gap-x-24 ">
+                
+                <div class="flex flex-col " data-aos="fade-bottom" data-aos-duration="2000">
+                    
+                    <div class="xzoom-container">
+                        <a href="./assets/images/maps-1-1.png" class="xzoom" xoriginal="./assets/images/maps-1-1.png">
+                            <img class="xzoom  rounded-xl w-[800px] h-auto" src="./assets/images/maps-1-1.png" alt="Map of Location" />
+                        </a>
+                    </div>
+                   
+                    <div class="xzoom-thumbs flex flex-row text-center mt-4 justify-center">
+                        <a href="./assets/images/maps-1-1.png">
+                            <img class="xzoom-gallery" width="100px" height="100px" src="./assets/images/maps-1-1.png" xpreview="./assets/images/maps-1-1.png" alt="Map Thumbnail 1">
+                        </a>
+                        <a href="./assets/images/maps-2-2.png">
+                            <img class="xzoom-gallery" width="100px" height="100px" src="./assets/images/maps-2-2.png" xpreview="./assets/images/maps-2-2.png" alt="Map Thumbnail 2">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col gap-y-12 ">
+                    
+                    <div class="flex flex-col gap-y-5">
+    
+                        <!-- kampus 1 -->
+                        <div class="card-timeline flex flex-row bg-[#39638A] hover:bg-white hover:border-8 hover:border-[#39638A] text-white hover:text-[#39638A] rounded-2xl p-5 items-center gap-x-6 text-center justify-center" data-aos="fade-right" data-aos-duration="2000">
+                    
+                            <a href="" class="font-bold text-base  text-center">As Syfa Kampus 1  Jalan Cagak Subang</a>
+                                
+                        </div>
+    
+                        <!-- kampus 2 -->
+        
+                        <div class="card-timeline flex flex-row bg-[#39638A] hover:bg-white hover:border-8 hover:border-[#39638A] text-white hover:text-[#39638A] rounded-2xl p-5 items-center gap-x-6 text-center justify-center" data-aos="fade-left" data-aos-duration="2000">
+                    
+                            <a href="" class="font-bold text-base  text-center">As Syfa Kampus 2 Wanareja</a>
+                                
+                        </div>
+    
+                        <!-- kampus 3 -->
+        
+                        <div class="card-timeline flex flex-row bg-[#39638A] hover:bg-white hover:border-8 hover:border-[#39638A] text-white hover:text-[#39638A] rounded-2xl p-5 items-center gap-x-6 text-center justify-center" data-aos="fade-right" data-aos-duration="2000">
+                    
+                            <a href="" class="font-bold text-base  text-center">As Syfa Kampus 3  Sagalaherang</a>
+                                
+                        </div>
+    
+                    </div>  
+                  
+                </div>
+        
+            </div>
+                
+        </div>
+    </section>
+    
+    <!-- sponsor -->
+    <section class="sponsor py-12 px-5 overflow-hidden mb-28">
+        <div class="max-w-6xl mx-auto bg-white py-10 px-8 rounded-2xl">
+            <div class="w-11/12 sm:w-2/3 mx-auto mb-10">
+                <h1 class="focus:outline-none xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pt-4" data-aos="fade-up" data-aos-duration="2000">OUR SPONSOR</h1>
+            </div>
+            <div class="flex flex-wrap items-center">
+                <div
+                    class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl" data-aos="fade-up" data-aos-duration="2000">
+                    <img class="focus:outline-none w-12 sm:w-16 border-4 border-[#39638A] rounded-xl shadow-md" src="https://cdn-icons-png.flaticon.com/128/3800/3800024.png"
+                    alt="Adidas" role="img"  />
+                </div>
+                <div
+                    class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl " data-aos="fade-bottom" data-aos-duration="2000">
+                    <img class="focus:outline-none w-12 sm:w-16 border-4 border-[#39638A] rounded-xl shadow-md" src="https://cdn-icons-png.flaticon.com/128/187/187902.png"
+                    alt="Chanel" role="img" />
+                </div>
+                <div
+                    class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl" data-aos="fade-up" data-aos-duration="2000">
+                    <img class="focus:outline-none w-12 sm:w-16 border-4 border-[#39638A] rounded-xl shadow-md" src="https://cdn-icons-png.flaticon.com/128/3845/3845877.png"
+                    alt="Nike" role="img" />
+                </div>
+                <div
+                    class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl" data-aos="fade-bottom" data-aos-duration="2000">
+                    <img class="focus:outline-none w-12 sm:w-16 border-4 border-[#39638A] rounded-xl shadow-md" src="https://cdn-icons-png.flaticon.com/128/732/732242.png"
+                    alt="Toyota" role="img" />
+                </div>
+                <div
+                    class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl" data-aos="fade-up" data-aos-duration="2000">
+                    <img class="focus:outline-none w-12 sm:w-16 border-4 border-[#39638A] rounded-xl shadow-md" src="https://cdn-icons-png.flaticon.com/128/187/187868.png"
+                    alt="Toyota" role="img" />
+                </div>
+                <div
+                    class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl" data-aos="fade-bottom" data-aos-duration="2000">
+                    <img class="focus:outline-none w-12 sm:w-16 border-4 border-[#39638A] rounded-xl shadow-md" src="https://cdn-icons-png.flaticon.com/128/685/685680.png"
+                    alt="Toyota" role="img" />
+                </div>
+            </div>
+
+            <div class="flex md:flex-row flex-col mx-auto justify-between">
+                <div class="flex-row" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="w-11/12 sm:w-2/3 mx-auto mb-10">
+                        <h1 class="focus:outline-none xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pt-4">MEDIA PARTNER</h1>
+                    </div>
+
+                    <div class=" flex flex-row gap-x-8">
+                        <div
+                            class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+                            <img class="focus:outline-none w-12 sm:w-16 border-4 border-[#39638A] rounded-xl " src="https://cdn-icons-png.flaticon.com/128/3800/3800024.png"
+                            alt="Adidas" role="img" />
+                        </div>
+                        <div
+                            class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl ">
+                            <img class="focus:outline-none w-12 sm:w-16 border-4 border-[#39638A] rounded-xl " src="https://cdn-icons-png.flaticon.com/128/187/187902.png"
+                            alt="Chanel" role="img" />
+                        </div>
+                        <div
+                            class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+                            <img class="focus:outline-none w-12 sm:w-16 border-4 border-[#39638A] rounded-xl " src="https://cdn-icons-png.flaticon.com/128/732/732242.png"
+                            alt="Toyota" role="img" />
+                        </div>
+                        <div
+                            class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+                            <img class="focus:outline-none w-12 sm:w-16 border-4 border-[#39638A] rounded-xl " src="https://cdn-icons-png.flaticon.com/128/187/187868.png"
+                            alt="Toyota" role="img" />
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="flex-row" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="w-11/12 sm:w-2/3 mx-auto mb-10">
+                        <h1 class="focus:outline-none xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pt-4">PARTNER KAMI</h1>
+
+                    </div>
+                    <div class=" flex flex-row  gap-x-8">
+                        <div
+                            class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+                            <img class="focus:outline-none w-12 sm:w-16 border-4 border-[#39638A] rounded-xl  shadow-md" src="https://cdn-icons-png.flaticon.com/128/3800/3800024.png"
+                            alt="Adidas" role="img" />
+                        </div>
+                        <div
+                            class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl ">
+                            <img class="focus:outline-none w-12 sm:w-16 border-4 border-[#39638A] rounded-xl  shadow-md" src="https://cdn-icons-png.flaticon.com/128/187/187902.png"
+                            alt="Chanel" role="img" />
+                        </div>
+                        <div
+                            class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+                            <img class="focus:outline-none w-12 sm:w-16 border-4 border-[#39638A] rounded-xl " src="https://cdn-icons-png.flaticon.com/128/732/732242.png"
+                            alt="Toyota" role="img" />
+                        </div>
+                        <div
+                            class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+                            <img class="focus:outline-none w-12 sm:w-16 border-4 border-[#39638A] rounded-xl " src="https://cdn-icons-png.flaticon.com/128/187/187868.png"
+                            alt="Toyota" role="img" />
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+           
+        </div>
+       
+    </section>
+
+    <!-- footer -->
+    <section class="bg-white py-10 px-10 overflow-hidden" data-aos="up" data-aos-duration="2000">
+        <footer class="footer max-w-6xl mx-auto mt-10" >
+            <div class="pb-4 mx-auto">
+              <div class="grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-0 gap-y-6">
+                <div class="md:mb-20 mb:10">
+                  <div class="">
+                    <img src="./assets/images/logo.png" alt="" class="mb-10">
+                    <p>ASFERA adalah perlombaaan untuk acara boarding school <br>
+                        assyfa
+                    </p>                                   
+                  </div>
+                
+                </div>
+                <div class="">
+                  <h2 class="title-font font-bold text-2xl mb-5 text-[#39638A]">MENU </h2>
+                  <nav class="list-none list-footer space-y-5 text-[#39638A]">
+                    <li>
+                      <a href="index.html" class="hover:font-bold">Home</a>
+                    </li>
+                    <li>
+                      <a href="merchandise.html" class="hover:font-bold">Merchandise</a>
+                    </li>
+                    <li>
+                      <a href="homestay.html" class="hover:font-bold">Homestay</a>
+                    </li>
+                    <li>
+                      <a href="competition.html" class="hover:font-bold">Competition</a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html" class="hover:font-bold">Contact us</a>
+                    </li>
+                  </nav>
+                </div>
+                <div class="">
+                <h2 class="title-font text-2xl mb-5  font-bold text-[#39638A]">CONTACT </h2>
+                    <nav class="list-none list-footer space-y-5 text-blue-950">
+                    <li>
+                        <a href="" class="hover:font-bold" >Sponshorship</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:font-bold">Media Partner</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:font-bold">Tenant</a>
+                    </li>
+            
+                    </nav>
+                </div>
+                <div class="">
+                  <h2 class="title-font text-2xl mb-5  font-bold text-[#39638A]">ADDRESS</h2>
+                  <nav class="list-none list-footer space-y-5 text-[#39638A] ">
+                    <li>
+                        <div class="card-timeline flex flex-row bg-[#39638A] hover:bg-white hover:border-8 hover:border-[#39638A] text-white hover:text-[#39638A] rounded-2xl p-5 items-center gap-x-6 text-center justify-center">
+                    
+                            <a href="" class="font-bold text-base  text-center">As Syfa Kampus 3  Sagalaherang</a>
+                                
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card-timeline flex flex-row bg-[#39638A] hover:bg-white hover:border-8 hover:border-[#39638A] text-white hover:text-[#39638A] rounded-2xl p-5 items-center gap-x-6 text-center justify-center">
+                    
+                            <a href="" class="font-bold text-base  text-center">As Syfa Kampus 2 Wanareja</a>
+                                
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card-timeline flex flex-row bg-[#39638A] hover:bg-white hover:border-8 hover:border-[#39638A] text-white hover:text-[#39638A] rounded-2xl p-5 items-center gap-x-6 text-center justify-center">
+                    
+                            <a href="" class="font-bold text-base  text-center">As Syfa Kampus 1  Jalan Cagak Subang</a>
+                                
+                        </div>
+                    </li>
+                    
+                  </nav>
+                </div>  
+              </div>
+            </div>
+            <div class="border-color mx-auto">
+              <div class="">              
+                <hr style="border-color: #2E2E5A;">
+              </div>
+                <div class="container mx-auto flex  pt-2 flex-col lg:flex-row items-center space-y-5 lg:space-y-0">
+                  <div class="flex title-font font-medium items-center text-gray-900 mb-4 lg:mb-0 md:mb-0 space-x-5" style="cursor: pointer;">
+                    <!-- Instagram -->
+                    <button
+                    type="button"
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                    style="background-color: #c13584">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                    </button>
+                    <!-- Youtube -->
+                    <button
+                    type="button"
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                    style="background-color: #ff0000">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                    </svg>
+                    </button>
+                      <!-- TikTok -->
+                    <button
+                    type="button"
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                    style="background-color: #6a76ac">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    class="h-4 w-4">
+                    <path
+                        fill="currentColor"
+                        d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                    </svg>
+                    </button>
+                      <!-- Whatsapp -->
+                    <button
+                    type="button"
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                    style="background-color: #128c7e">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                    </svg>
+                    </button>
+                  </div>
+                  <nav class="mx-auto flex flex-wrap items-center text-base justify-center space-x-5 font-bold text-[#39638A]">
+                    <a href="" class="footer-link">Terms of Service</a>
+                    <span>|</span>
+                    <a href="" class="footer-link">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="" class="footer-link">Licenses</a>
+                  </nav>
+                  <nav class="flex lg:flex-row flex-col items-center text-base justify-center font-bold text-[#39638A]">
+                    <p>Copyright ©  2023 Syfest & Asfera</p>
+                  </nav>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+            // Initialize xZoom
+            $('.xzoom, .xzoom-gallery').xzoom();
+    
+            // Initialize Magnific Popup
+            $('.xzoom, .xzoom-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                lens: true,
+                gallery: {
+                    enabled: true
+                }
+            });
+    
+            // Initialize Owl Carousel
+            $('.owl-carousel').owlCarousel({
+                dots: false,
+                loop: true,
+                autoWidth: true,
+                margin: 10,
+                nav: true,
+                autoplay: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                },
+                navText: [
+                    "<span class='text-white text-sm px-2 py-2 bg-[#39638A] font-bold rounded-2xl hover:rounded-2xl'>Prev</span>",
+                    "<span class='text-white text-sm px-2 py-2 bg-[#39638A] font-bold rounded-2xl hover:rounded-2xl'>Next</span>"
+                ]
+            });
+        });
+    </script>
+    
+
+    <script>
+        // Set the date and time of the event (YYYY, MM (0-11), DD, HH, MM, SS)
+        const eventDate = new Date(2023, 11, 25, 23, 59, 59).getTime();
+    
+        // Update the timer every second
+        const timerInterval = setInterval(updateTimer, 1000);
+    
+        function updateTimer() {
+            // Get the current date and time
+            const currentDate = new Date().getTime();
+    
+            // Calculate the remaining time in milliseconds
+            const timeDifference = eventDate - currentDate;
+    
+            // Calculate days, hours, minutes, and seconds
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    
+            // Update the HTML elements with the calculated values
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+    
+            // If the event has passed, clear the interval
+            if (timeDifference <= 0) {
+                clearInterval(timerInterval);
+                // Optionally, you can display a message or take some action when the event has passed.
+            }
+        }
+    
+        // Call the function once to initialize the timer
+        updateTimer();
+    </script>
+    
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="assets/plugin/xZoom-master/dist/xzoom.min.js"></script>
+
+    <script>
+        $('.xzoom, .xzoom-gallery').xzoom({position: 'lens', lensShape: 'circle', bg:true, sourceClass: 'xzoom-hidden'});
+    </script>
+
+    <script>
+        var currentIndex = 0;
+        var images = [
+            "assets/images/gallery-2.png",
+            "assets/images/gallery.png",
+            "assets/images/gallery-3.png",
+            "assets/images/gallery-4.png",
+            "assets/images/gallery-5.png",
+            "assets/images/gallery-6.png"
+        ];
+    
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateGallery();
+        }
+    
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateGallery();
+        }
+    
+        function updateGallery() {
+            var galleryContainer = document.getElementById("galleryContainer");
+            galleryContainer.innerHTML = '';
+    
+            for (var i = 0; i < images.length; i++) {
+                var img = document.createElement("img");
+                img.className = "h-full w-auto aspect-video rounded-sm object-cover object-center dark:bg-gray-500 gap-x-4"; // Add gap-x-4 here
+                img.src = images[(currentIndex + i) % images.length];
+                galleryContainer.appendChild(img);
+            }
+        }
+    </script>
+    
+    <!-- modal -->
+    <script>
+        var openmodal = document.querySelectorAll('.modal-open');
+        for (var i = 0; i < openmodal.length; i++) {
+        openmodal[i].addEventListener('click', function (event) {
+            event.preventDefault();
+            toggleModal();
+        });
+        }
+
+        const overlay = document.querySelector('.modal-overlay');
+        overlay.addEventListener('click', toggleModal);
+
+        var closemodal = document.querySelectorAll('.modal-close');
+        for (var i = 0; i < closemodal.length; i++) {
+        closemodal[i].addEventListener('click', toggleModal);
+        }
+
+        document.onkeydown = function (evt) {
+        evt = evt || window.event;
+        var isEscape = false;
+        if ("key" in evt) {
+            isEscape = (evt.key === "Escape" || evt.key === "Esc");
+        } else {
+            isEscape = (evt.keyCode === 27);
+        }
+        if (isEscape && document.body.classList.contains('modal-active')) {
+            toggleModal();
+        }
+        };
+
+        function toggleModal() {
+            console.log('gagal error');
+        const body = document.querySelector('body');
+        const modal = document.querySelector('.modal');
+        modal.classList.toggle('opacity-0');
+        modal.classList.toggle('pointer-events-none');
+        body.classList.toggle('modal-active');
+        }
+    </script>
+  
+    <script>
+
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 25, 2023 00:00:00").getTime();
+    
+        // Update the countdown every 1 second
+        var x = setInterval(function() {
+    
+            // Get the current date and time
+            var now = new Date().getTime();
+    
+            // Calculate the remaining time
+            var distance = countDownDate - now;
+    
+            // Calculate days, hours, minutes, and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+            // Display the countdown
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+    
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

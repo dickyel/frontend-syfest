@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Montserrat:wght@300;400;500;600;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="../src/input.css">
+
+</head>
+<body class="font-[Poppins] ">
+
+    <div class="bg-[#39638A] flex items-center justify-center h-screen">
+        <div class="bg-white p-4 rounded-lg shadow-lg max-w-sm w-full">
+            
+            <h2 class="text-2xl font-semibold text-center ">Daftar</h2>
+            <p class="text-gray-600 text-center mb-6">Berkas Pendaftaran.</p>
+            <form>
+                <div class="flex flex-row items-center mb-4 gap-x-6">
+                    <div class="flex flex-row">
+                        <input id="country-option-1" type="radio" name="individu" value="" class="h-4 w-4 border-gray-300 focus:ring-2 focus:ring-blue-300" aria-labelledby="country-option-1" aria-describedby="country-option-1" checked="">
+                        <label for="country-option-1" class="text-sm font-medium text-gray-800 ml-2 block">
+                            Individu
+                        </label>
+                    </div>
+                    <div class="flex flex-row">
+                        <input id="country-option-1" type="radio" name="individu" value="" class="h-4 w-4 border-gray-300 focus:ring-2 focus:ring-blue-300" aria-labelledby="country-option-1" aria-describedby="country-option-1" checked="">
+                        <label for="country-option-1" class="text-sm font-medium text-gray-800 ml-2 block">
+                            Group
+                        </label>
+                    </div>
+                    
+                </div>
+
+                <div class="flex flex-row items-center mb-4 gap-x-6">
+                    <div class="flex flex-row">
+                        <input id="country-option-1" type="radio" name="individu" value="" class="h-4 w-4 border-gray-300 focus:ring-2 focus:ring-blue-300" aria-labelledby="country-option-1" aria-describedby="country-option-1" checked="">
+                        <label for="country-option-1" class="text-sm font-medium text-gray-800 ml-2 block">
+                            Male (Laki-laki)
+                        </label>
+                    </div>
+                    <div class="flex flex-row">
+                        <input id="country-option-1" type="radio" name="individu" value="" class="h-4 w-4 border-gray-300 focus:ring-2 focus:ring-blue-300" aria-labelledby="country-option-1" aria-describedby="country-option-1" checked="">
+                        <label for="country-option-1" class="text-sm font-medium text-gray-800 ml-2 block">
+                            Female (Perempuan)
+                        </label>
+                    </div>
+                    
+                </div>
+
+                <div class="flex flex-row items-center gap-x-4">
+                    <div class="flex flex-col">
+                        <label for="email" class="block text-gray-700 text-sm font-semibold mb-2">Email Address *</label>
+                        <input type="email" id="email" class="form-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:ring-blue-500" required placeholder="syfest@gmail.com">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="wa" class="block text-gray-700 text-sm font-semibold mb-2">Nomor Telepon (WA) *</label>
+                        <input type="wa" id="wa" class="form-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:ring-blue-500" required placeholder="+6286717189198">
+                    </div>
+                </div>
+
+                <div class="mb-6 mt-4">
+                    <label for="smp" class="block text-gray-700 text-sm font-semibold mb-2">SD/SMP/SMA *</label>
+                    <input type="text" id="text" class="form-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:ring-blue-500" required placeholder="SMP 01">
+                    
+                </div>
+
+                <div class="flex flex-row items-center gap-x-4 mt-3 mb-3">
+                    <div class="flex flex-col">
+                        <label for="email" class="block text-gray-700 text-sm font-semibold mb-2">Nomor Telpon *</label>
+                        <input type="email" id="email" class="form-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:ring-blue-500" required placeholder="syfest@gmail.com">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="wa" class="block text-gray-700 text-sm font-semibold mb-2">Email (WA) *</label>
+                        <input type="wa" id="wa" class="form-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:ring-blue-500" required placeholder="syfest">
+                    </div>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 font-bold">Register</button>
+                <p class="text-gray-600 text-xs text-center mt-4">
+                    Anda ingin kembali ke halaman utama ?
+                    <a href="#" class="text-blue-500 hover:underline">Klik Disini</a>.
+                </p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

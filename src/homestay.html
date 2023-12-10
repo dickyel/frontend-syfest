@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Montserrat:wght@300;400;500;600;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./assets/plugin/xZoom-master/dist/xzoom.css" media="all" />
+    <link rel="stylesheet" href="input.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+   
+</head>
+<body class="font-[Montserrat] bg-[#39638A]">
+
+
+    <!-- loading spinner -->
+    <div id="loading-spinner" class="flex justify-center items-center h-screen fixed top-0 left-0 w-full bg-white opacity-95">
+  
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+            <img src="./assets/images/logo.png" alt="Your Logo" class="w-14 h-14">
+        </div>
+      
+        <div class="relative w-24 h-24 animate-spin rounded-full bg-gradient-to-r from-[#59A5FF] via-[#9AC3F6] to-[#E7F1EC] overflow-hidden">
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-white rounded-full border-2 border-white">
+            </div>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden overflow-hidden">
+        <!-- navbar -->
+        <nav class="flex flex-row max-w-6xl mx-auto justify-between items-center py-8 px-5 mb-8 overflow-hidden"  data-aos="zoom-in" data-aos-duration="1000"   data-aos-delay="50">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="" width="50px">
+            </a>
+            <a href="index.html" class="text-base text-white font-bold">
+                Asfera ©2023/2034
+            </a>
+            <button id="openModal" class="btn-modal modal-open bg-transparent">
+                <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.5" width="70" height="5" fill="white"/>
+                    <rect y="16.5" width="70" height="5" fill="white"/>
+                </svg>
+                    
+            </button>
+    
+        </nav>
+        
+        <!-- modal pop up  -->
+        <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-[999] overflow-hidden">
+            <div class="modal-overlay absolute w-full h-full bg-[#39638A] opacity-95"></div>
+            
+            <div class="modal-container fixed w-full h-full z-50 overflow-y-auto items-center">
+                
+                <!-- navbar -->
+                <nav class="flex flex-row max-w-6xl mx-auto justify-between items-center py-8 px-5 mb-8">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="" width="50px">
+                    </a>
+                   
+                    <button id="openModal" class="btn-modal modal-open bg-transparent">
+                        <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="70" height="5" fill="white"/>
+                            <rect y="16.5" width="70" height="5" fill="white"/>
+                        </svg>
+                            
+                            
+                    </button>
+
+                </nav>
+            
+                <!-- menu -->
+                <div class="modal-content justify-center mx-auto h-auto text-center py-8 flex flex-col items-center ">
+                
+                <!-- navigasi -->
+                <div class=" items-center pb-2 py-20">
+                    <ul class="flex flex-col gap-y-4">
+                        <li>
+                            <a href="index.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Home</a>
+                        </li>
+                        <li>
+                            <a href="merchandise.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Merchandise</a>
+                        </li>
+                        <li>
+                            <a href="homestay.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Homestay</a>
+                        </li>
+                        <li>
+                            <a href="competition.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Competition</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Contact Us</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            
+                </div>
+            </div>
+        </div>
+        
+        <!-- homestay -->
+        <section class="homestay max-w-6xl mx-auto  px-8 md:py-8 py-20 overflow-hidden " data-aos="fade-up" data-aos-duration="2000">
+            <p class="font-bold font-['Inria_Sans'] text-white mt-4 mb-8 md:text-8xl text-6xl text-center">
+                HOMESTAY 
+            </p>
+            <div class="flex md:flex-row flex-col items-center justify-center gap-x-24 gap-y-10 ">
+                
+                <div class="flex flex-col bg-white items-center rounded-2xl justify-center px-8 py-8 shadow-md" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="assets/images/Group 7.png" alt="" class="w-[400px]" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="50">
+                    <p class="font-bold font-['Inria_Sans'] text-[#39638A] mt-8 text-4xl text-center " data-aos="fade-right" data-aos-duration="2000">
+                        HOMESTAY FOR BOYS
+                    </p>
+                    <div class="border-b-2 border-[#39638A] w-full my-4 " data-aos="fade-right" data-aos-duration="2000"></div>
+                    <a href="" class="text-center mt-2 border-2 py-4 px-4 font-bold text-white bg-[#39638A] rounded-3xl hover:font-bold hover:bg-white hover:text-[#39638A] hover:border-4 hover:border-[#39638A]" data-aos="fade-right" data-aos-duration="2000">JOIN NOW</a>
+                </div>
+                
+                <div class="flex flex-col bg-white items-center rounded-2xl justify-center px-8 py-8 shadow-md" data-aos="fade-right" data-aos-duration="2000">
+                    <img src="assets/images/Group 8.png" alt="" class="w-[400px]">
+                    <p class="font-bold font-['Inria_Sans'] text-[#39638A] mt-8 text-4xl text-center">
+                        HOMESTAY FOR GIRL
+                    </p>
+                    <div class="border-b-2 border-[#39638A] w-full my-4"></div>
+                    <a href="" class="text-center mt-2 border-2 py-4 px-4 font-bold text-white bg-[#39638A] rounded-3xl hover:font-bold hover:bg-white hover:text-[#39638A] hover:border-4 hover:border-[#39638A]">JOIN NOW</a>
+                </div>
+        
+            </div>
+                
+        </section>
+
+    </div>
+ 
+    
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="assets/javascript/spinner.js">
+        
+    </script>
+
+    <script src="assets/javascript/modal.js">
+
+    </script>
+
+</body>
+</html>
