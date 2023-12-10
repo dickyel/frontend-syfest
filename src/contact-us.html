@@ -29,7 +29,7 @@
 
 
 </head>
-<body class="font-[Montserrat] bg-[#39638A] relative ">
+<body class="font-[Montserrat] bg-[#39638A]">
 
     <!-- spinner/loader  -->
     <div id="loading-spinner" class="flex justify-center items-center h-screen fixed top-0 left-0 w-full bg-white opacity-95 overflow-hidden">
@@ -48,35 +48,41 @@
     <div id="main-content" class="hidden overflow-hidden">
 
         <!-- main navbar -->
-        <nav class="flex flex-row max-w-6xl mx-auto justify-between items-center py-8 px-5 mb-8 overflow-hidden" data-aos="zoom-in" data-aos-duration="1000"   data-aos-delay="50">
-            <a href="index.html">
-                <img src="assets/images/logo.png" alt="" width="50px">
-            </a>
-            <a href="index.html" class="text-base text-white font-bold">
-                Asfera ©2023/2034
-            </a>
-            <button id="openModal" class="btn-modal modal-open bg-transparent">
-                <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect y="0.5" width="70" height="5" fill="white"/>
-                    <rect y="16.5" width="70" height="5" fill="white"/>
-                </svg>
-                    
-            </button>
 
-        </nav>
+        <header class="fixed top-0 left-0 right-0 bg-[#39638A] z-50">
+            <nav class="  flex flex-row max-w-6xl mx-auto justify-between items-center py-5 px-5  overflow-hidden" data-aos="zoom-in" data-aos-duration="1000"   data-aos-delay="50">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="" width="50px">
+                </a>
+                <a href="index.html" class="text-base text-white font-bold">
+                    Asfera ©2023/2034
+                </a>
+                <button id="openModal" class="btn-modal modal-open bg-transparent">
+                    <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.5" width="70" height="5" fill="white"/>
+                        <rect y="16.5" width="70" height="5" fill="white"/>
+                    </svg>
+                        
+                </button>
+    
+                
+    
+            </nav>
+        </header>
+        
 
         <!-- modal pop up  -->
         <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-[999] overflow-hidden">
             <div class="modal-overlay absolute w-full h-full bg-[#39638A] opacity-95"></div>
             
-            <div class="modal-container fixed w-full h-full z-50 overflow-y-auto items-center">
+            <div class="modal-container fixed w-full h-full overflow-y-auto items-center">
                 
                 <!-- navbar -->
-                <nav class="flex flex-row max-w-6xl mx-auto justify-between items-center py-8 px-5 mb-8">
+                <nav class="flex flex-row max-w-6xl mx-auto justify-between items-center py-5 px-5">
                     <a href="index.html">
                         <img src="assets/images/logo.png" alt="" width="50px">
                     </a>
-                   
+                
                     <button id="openModal" class="btn-modal modal-open bg-transparent">
                         <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect y="0.5" width="70" height="5" fill="white"/>
@@ -89,10 +95,10 @@
                 </nav>
             
                 <!-- menu -->
-                <div class="modal-content justify-center mx-auto h-auto text-center py-8 flex flex-col items-center ">
+                <div class="modal-content justify-center mx-auto h-auto text-center py-4 flex flex-col items-center ">
                 
                 <!-- navigasi -->
-                <div class=" items-center pb-2 py-20">
+                <div class=" items-center pb-2 py-16">
                     <ul class="flex flex-col gap-y-4">
                         <li>
                             <a href="index.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Home</a>
@@ -117,9 +123,9 @@
             </div>
         </div>
 
-        <!-- header  -->
+        <!-- header contact -->
        
-        <section  class="header flex flex-col max-w-6xl mx-auto py-6 overflow-hidden" data-aos="fade-up" data-aos-duration="1000"   data-aos-delay="50">
+        <section  class="header flex flex-col max-w-6xl mx-auto py-6 pt-40 overflow-hidden" data-aos="fade-up" data-aos-duration="1000"   data-aos-delay="50">
             <div class="header-contact grid-cols-6 items-center justify-center px-20" data-aos="fade-up" data-aos-duration="1000"   data-aos-delay="50">
                 <h1 class="lg:text-7xl md:text-5xl text-4xl text-white text-center font-bold font-['Inria_Sans']">
                     Ready To Team Up With Us?
@@ -133,13 +139,15 @@
             <div class="divider px-32" data-aos="fade-left" data-aos-duration="1000"   data-aos-delay="50">
                 <hr class="my-4  border-t-2 mt-8">
             </div>
+
+
     
         </section>
         
         <!-- social media -->
         <section  class=" social-media flex md:flex-row flex-col max-w-6xl mx-auto pt-2 justify-between overflow-hidden" data-aos="fade-right" data-aos-duration="1000"   data-aos-delay="50">
             <div class="flex flex-col px-5">
-                <p class="text-white font-['Inria_Sans'] mt-6 text-2xl  font-regular">
+                <p class="text-white font-['Inria_Sans'] mt-6 text-2xl  font-bold">
                     FOLLOW US
                 </p>
                 <ul class="flex flex-col gap-y-4 md:items-start ">
@@ -150,57 +158,35 @@
                         <a href="https://www.tiktok.com/@asfera.official?is_from_webapp=1&sender_device=pc" class="md:text-5xl text-4xl text-white font-regular font-['Poppins'] " target="_blank">TIKTOK</a>
                     </li>
                     <li data-aos="fade-left" data-aos-duration="2000">
-                        <a href="assyifafestivalraya@gmail.com" class="md:text-5xl text-4xl text-white font-regular font-['Poppins'] " target="_blank">GMAIL</a>
+                        <a href="" class="md:text-5xl text-4xl text-white font-regular font-['Poppins'] " target="_blank">YOUTUBE</a>
                     </li>
                 </ul>
             </div>
             <div class="flex flex-col justify-end px-4 ml-auto items-end">
-                <p class="text-white font-['Inria_Sans'] mt-6 text-2xl font-regular " data-aos="fade-left" data-aos-duration="2000">
+                <p class="text-white font-['Inria_Sans'] mt-6 text-2xl font-bold " data-aos="fade-left" data-aos-duration="2000">
                     CONTACT NUMBER
                 </p>
                 <ul class="flex flex-col gap-y-4 items-end">
                     <li class="mt-4" data-aos="fade-right" data-aos-duration="2000">
-                        <a href="https://wa.me/+6282210971813" class="md:text-5xl text-4xl text-white font-se font-['Poppins'] " target="_blank">SPONSORSHIP</a>
+                        <a href="https://wa.me/+6282210971813" class="md:text-5xl text-3xl text-white font-se font-['Poppins'] " target="_blank">ADMIN LOMBA</a>
                     </li>
                     <li data-aos="fade-left" data-aos-duration="2000">
-                        <a href="https://wa.me/+6281808785243" class="md:text-5xl text-4xl text-white font-regular font-['Poppins'] " target="_blank">MEDIA PARTNER</a>
+                        <a href="https://wa.me/+6281808785243" class="md:text-5xl text-3xl text-white font-regular font-['Poppins'] " target="_blank">KONTAK ADMIN</a>
                     </li>
                     <li data-aos="fade-left" data-aos-duration="2000">
-                        <a href="https://wa.me/+6282111546177" class="md:text-5xl text-4xl text-white font-regular font-['Poppins'] " target="_blank">TENANT</a>
+                        <a href="https://wa.me/+6282111546177" class="md:text-5xl text-3xl text-white font-regular font-['Poppins'] " target="_blank">KONTAK TENANT</a>
                     </li>
                 </ul>             
             </div>
         </section>
 
-        <!-- privacy policy -->
-    
-        <section  class="privacy max-w-6xl mx-auto pt-12 mb-4 overflow-hidden" data-aos="fade-right" data-aos-duration="1000"   data-aos-delay="50">
-            <div class="flex flex-col px-4">
-                <div class=" items-center pb-2 ">
-                    <ul class="flex flex-col gap-y-1 ">
-                        <li class="mt-4" data-aos="fade-left" data-aos-duration="2000">
-                            <a href="" class="text-base text-white font-thin font-['Poppins'] " target="_blank">PRIVACY POLICY</a>
-                        </li>
-                        <li data-aos="fade-right" data-aos-duration="2000">
-                            <a href="" class="text-base text-white font-thin font-['Poppins'] " target="_blank">COOKIES POLICY</a>
-                        </li>
-                        <li data-aos="fade-left" data-aos-duration="2000">
-                            <a href="" class="text-base text-white font-thin font-['Poppins'] " target="_blank">TERM & CONDITIONS</a>
-                        </li>
-                    </ul>
-                    <p class="text-white font-['Inria_Sans'] mt-1 text-sm font-thin">
-                        ©2023 ALL RIGHT RESERVED
-                    </p>
-                   
-                </div>
-            </div>
-        </section>
 
-        <!-- logo asfera muter -->
-    
-        <section  class="logo-rounded absolute bottom-0 right-0 transform translate-x-1/2 translate-y-1/2 overflow-hidden" data-aos="fade-left" data-aos-duration="1000"   data-aos-delay="50">
-            <img class="w-full overflow-hidden" src="assets/images/asfera-muter.png" alt="">
-        </section> 
+        <div class="logo-rounded max-w-6xl mx-auto justify-center mt-14">
+            <div class="absolute inset-0 flex items-center justify-center">
+                <img class="max-w-full max-h-full" src="assets/images/asfera-muter.png" alt=""> 
+            </div>
+            
+        </div>
 
     </div>
     

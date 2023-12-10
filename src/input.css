@@ -10,16 +10,9 @@ body.loading-content .main-content {
     display: none;
 }
 
-.background-homestay {
-    background: linear-gradient(to right,#39638A 50%, white 50%);
-    width: 100%;
-    height: 100%;
-}
-
-
 .logo-rounded {
-    width: 130px; /* Adjust the size as needed */
-    height: 130px; /* Adjust the size as needed */
+    width: 160px; /* Adjust the size as needed */
+    height: 160px; /* Adjust the size as needed */
     animation: rotate 5s infinite linear;
 }
 
