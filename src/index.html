@@ -29,39 +29,50 @@
     <!-- Include Magnific Popup CSS and JS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
     
+    <!-- Add these links in the head section of your HTML document -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.theme.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
 
 </head>
 <body class="font-[Montserrat] bg-[#39638A]">
     
-    <nav class=" flex flex-row max-w-6xl mx-auto justify-between items-center py-8 px-5 mb-8 bg-[#39638A]"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50">
-        <a href="index.html">
-            <img src="assets/images/logo.png" alt="" width="50px">
-        </a>
-        <a href="index.html" class="text-base text-white font-bold">
-            Asfera ©2023/2034
-        </a>
-        <button id="openModal" class="btn-modal modal-open bg-transparent">
-            <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect y="0.5" width="70" height="5" fill="white"/>
-                <rect y="16.5" width="70" height="5" fill="white"/>
-            </svg>
-        </button>
-    </nav>
-    
+    <!-- header -->
+    <header class="fixed top-0 left-0 right-0 bg-[#39638A] z-50">
+        <nav class="  flex flex-row max-w-6xl mx-auto justify-between items-center py-5 px-5  overflow-hidden" data-aos="zoom-in" data-aos-duration="1000"   data-aos-delay="50">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="" width="50px">
+            </a>
+            <a href="index.html" class="text-base text-white font-bold">
+                Asfera ©2023/2034
+            </a>
+            <button id="openModal" class="btn-modal modal-open bg-transparent">
+                <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.5" width="70" height="5" fill="white"/>
+                    <rect y="16.5" width="70" height="5" fill="white"/>
+                </svg>
+                    
+            </button>
+
+        </nav>
+    </header>
 
     <!-- modal pop up  -->
     <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-[999] overflow-hidden">
         <div class="modal-overlay absolute w-full h-full bg-[#39638A] opacity-95"></div>
         
-        <div class="modal-container fixed w-full h-full z-50 overflow-y-auto items-center">
+        <div class="modal-container fixed w-full h-full overflow-y-auto items-center">
             
             <!-- navbar -->
-            <nav class="flex flex-row max-w-6xl mx-auto justify-between items-center py-8 px-5 mb-8">
+            <nav class="flex flex-row max-w-6xl mx-auto justify-between items-center py-5 px-5">
                 <a href="index.html">
                     <img src="assets/images/logo.png" alt="" width="50px">
                 </a>
-               
+            
                 <button id="openModal" class="btn-modal modal-open bg-transparent">
                     <svg width="70" height="22" viewBox="0 0 70 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="0.5" width="70" height="5" fill="white"/>
@@ -74,10 +85,10 @@
             </nav>
         
             <!-- menu -->
-            <div class="modal-content justify-center mx-auto h-auto text-center py-8 flex flex-col items-center ">
+            <div class="modal-content justify-center mx-auto h-auto text-center py-4 flex flex-col items-center ">
             
             <!-- navigasi -->
-            <div class=" items-center pb-2 py-20">
+            <div class=" items-center pb-2 py-16">
                 <ul class="flex flex-col gap-y-4">
                     <li>
                         <a href="index.html" class="md:text-6xl text-4xl text-white font-semibold font-['Poppins'] ">Home</a>
@@ -102,9 +113,8 @@
         </div>
     </div>
 
-
     <!-- about -->
-    <section class="about flex flex-col max-w-6xl mx-auto py-8 "  data-aos="fade-down" data-aos-duration="2000">
+    <section class="about flex flex-col max-w-6xl mx-auto py-8 mt-28 overflow-hidden"  data-aos="fade-down" data-aos-duration="2000">
         <h1 class="lg:text-8xl md:text-6xl text-5xl text-center text-white font-regular leading-tight font-['Inria_Sans']">
             MYRIAD OF DHIYA
             <br>
@@ -121,7 +131,7 @@
             <div class="flex flex-col items-center text-center justify-center" data-aos="fade-left" data-aos-duration="1000">
                 <img src="assets/images/logo-out.png" alt="" class="w-1/2">
                 <p class="text-white text-2xl font-bold">
-                    As- Syfa Festival Raya 
+                As-Syifa Festival Raya
                 </p>
             </div>
 
@@ -236,11 +246,13 @@
                         </svg>
  
                         <div class="flex flex-col gap-y-1">
-                            <h3 class="font-bold text-xl text-indigo-950">DAY COMPETITION</h3>
+                            <h3 class="font-bold text-xl text-indigo-950">COMPETITION DAY FOR BOYS</h3>
                             <p class=" text-base leading-relaxe text-gray-500">
                                15 FEBRUARY 2024
                             </p>
                         </div>
+
+                    
                             
                     </div>
 
@@ -276,7 +288,7 @@
     </section>
 
     <!-- even timer -->
-    <section class="event-timer bg-white pt-40 pb-20 px-5 overflow-hidden">
+    <section class="event-timer bg-white pt-40 pb-14 px-5 overflow-hidden">
         <div class="max-w-6xl mx-auto">
             <h1 class="text-[#39638A] text-center font-bold md:text-8xl text-6xl" data-aos="fade-down" data-aos-duration="2000">WE WILL START IN</h1> 
             <div class="timer mt-10">
@@ -315,131 +327,126 @@
     </section>
 
     <!-- event gallery -->
-    <section class="event-gallery bg-white px-5 overflow-hidden">
-        <div class="max-w-6xl mx-auto">
+    <section class="event-gallery bg-white px-5  overflow-hidden">
+        <div class="max-w-6xl mx-auto ">
             <h1 class="text-[#39638A] text-center font-bold text-6xl" data-aos="fade-up" data-aos-duration="2000">
                 EVENT GALLERY
             </h1>
             <div class="flex flex-row gap-y-10 mb-20 mt-10 gap-x-8">
                 <div class="owl-carousel owl-theme w-full">
                     <a href="./assets/images/galery-1.png" data-lightbox="gallery" class="owl-carousel-item-container" data-aos="fade-right" data-aos-duration="2000">
-                        <img src="./assets/images/galery-1.png" alt="" class="owl-carousel-item md:h-80 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
-                        <div class="preview-button">
-                            <button class="bg-transparent text-white font-semibold border-4 hover:bg-[#39638A] hover:font-bold px-4 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                Preview
-                            </button>
-                        </div>
+                        <img src="./assets/images/galery-1.png" alt="" class="owl-carousel-item md:h-96 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
+                        
                     </a>
                     <!-- Add similar code for other images -->
                     <a href="./assets/images/galery-2.png" data-lightbox="gallery" class="owl-carousel-item-container" data-aos="fade-right" data-aos-duration="2000">
-                        <img src="./assets/images/galery-2.png" alt="" class="owl-carousel-item md:h-80 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
-                        <div class="preview-button">
-                            <button class="bg-transparent text-white font-semibold border-4 hover:bg-[#39638A] hover:font-bold px-4 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                Preview
-                            </button>
-                        </div>
+                        <img src="./assets/images/galery-2.png" alt="" class="owl-carousel-item md:h-96 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
+                    
                     </a>
-
+    
                     <a href="./assets/images/galery-3.png" data-lightbox="gallery" class="owl-carousel-item-container" data-aos="fade-right" data-aos-duration="2000">
-                        <img src="./assets/images/galery-3.png" alt="" class="owl-carousel-item md:h-80 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
-                        <div class="preview-button">
-                            <button class="bg-transparent text-white font-semibold border-4 hover:bg-[#39638A] hover:font-bold px-4 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                Preview
-                            </button>
-                        </div>
+                        <img src="./assets/images/galery-3.png" alt="" class="owl-carousel-item md:h-96 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
+                        
                     </a>
-
+    
                     <a href="./assets/images/galery-4.png" data-lightbox="gallery" class="owl-carousel-item-container" data-aos="fade-right" data-aos-duration="2000">
-                        <img src="./assets/images/galery-4.png" alt="" class="owl-carousel-item md:h-80 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
-                        <div class="preview-button">
-                            <button class="bg-transparent text-white font-semibold border-4 hover:bg-[#39638A] hover:font-bold px-4 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                Preview
-                            </button>
-                        </div>
+                        <img src="./assets/images/galery-4.png" alt="" class="owl-carousel-item md:h-96 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
+                        
                     </a>
-
+    
                     <a href="./assets/images/galery-5.png" data-lightbox="gallery" class="owl-carousel-item-container" data-aos="fade-right" data-aos-duration="2000">
-                        <img src="./assets/images/galery-5.png" alt="" class="owl-carousel-item md:h-80 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
-                        <div class="preview-button">
-                            <button class="bg-transparent text-white font-semibold border-4 hover:bg-[#39638A] hover:font-bold px-4 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                Preview
-                            </button>
-                        </div>
+                        <img src="./assets/images/galery-5.png" alt="" class="owl-carousel-item md:h-96 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
+                        
                     </a>
-
+    
                     <a href="./assets/images/galery-6.png" data-lightbox="gallery" class="owl-carousel-item-container" data-aos="fade-right" data-aos-duration="2000">
-                        <img src="./assets/images/galery-6.png" alt="" class="owl-carousel-item md:h-80 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
-                        <div class="preview-button">
-                            <button class="bg-transparent text-white font-semibold border-4 hover:bg-[#39638A] hover:font-bold px-4 py-2 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                Preview
-                            </button>
-                        </div>
+                        <img src="./assets/images/galery-6.png" alt="" class="owl-carousel-item md:h-96 h-60 w-full object-cover border-8 border-[#39638A] rounded-xl">
+                        
                     </a>
-
+    
                 </div>
+            </div>
+            <hr class="my-4  border-t-2 mt-20 mb-10" data-aos="fade-right" data-aos-duration="2000">
+        </div>
+    </section>
+
+    <!-- event video -->
+    <section class="event-videos bg-white px-5 pt-10  overflow-hidden">
+        <div class="max-w-6xl mx-auto border-none" >
+            <h1 class="text-[#39638A] text-center font-bold text-6xl" data-aos="fade-up" data-aos-duration="2000">
+                EVENT VIDEO
+            </h1>
+            <div class="flex flex-row gap-y-10 mb-20 mt-10 gap-x-8">
+                <section class="swiper-container loading">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <iframe class="w-full h-80 border-8 rounded-2xl" src="https://www.youtube.com/embed/yAoLSRbwxL8?si=UV1jJqFFlqKRiOqa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide" >
+                            <iframe class="w-full h-80 border-8 rounded-2xl" src="https://www.youtube.com/embed/yAoLSRbwxL8?si=UV1jJqFFlqKRiOqa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide" >
+                            <iframe class="w-full h-80 border-8 rounded-2xl" src="https://www.youtube.com/embed/yAoLSRbwxL8?si=UV1jJqFFlqKRiOqa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide" >
+                            <iframe class="w-full h-80 border-8 rounded-2xl" src="https://www.youtube.com/embed/yAoLSRbwxL8?si=UV1jJqFFlqKRiOqa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide" >
+                            <iframe class="w-full h-80 border-8 rounded-2xl" src="https://www.youtube.com/embed/yAoLSRbwxL8?si=UV1jJqFFlqKRiOqa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-button-white h-4 px-4 py-4 "></div>
+                    <div class="swiper-button-next swiper-button-white h-4 px-4 py-4 "></div>
+                </section>
+                  
             </div>
         </div>
     </section>
 
     <!-- maps -->
+  
     <section class="maps px-5 py-10 overflow-hidden">
-        <div class="max-w-6xl mx-auto bg-white rounded-2xl mt-20 py-10 px-16 ">
-            <h1 class="text-[#39638A] font-['Inria_Sans'] font-bold text-8xl  text-center mb-10" data-aos="fade-up" data-aos-duration="2000">
+        <div class="max-w-6xl mx-auto bg-white rounded-2xl mt-10 py-10 px-8">
+            <h1 class="text-[#39638A]  font-bold text-6xl text-center mb-4" data-aos="fade-up" data-aos-duration="2000">
                 MAPS
             </h1>
-            <div class="flex md:flex-row flex-col items-center gap-x-24 ">
-                
-                <div class="flex flex-col " data-aos="fade-bottom" data-aos-duration="2000">
-                    
-                    <div class="xzoom-container">
-                        <a href="./assets/images/maps-1-1.png" class="xzoom" xoriginal="./assets/images/maps-1-1.png">
-                            <img class="xzoom  rounded-xl w-[800px] h-auto" src="./assets/images/maps-1-1.png" alt="Map of Location" />
-                        </a>
-                    </div>
-                   
-                    <div class="xzoom-thumbs flex flex-row text-center mt-4 justify-center">
-                        <a href="./assets/images/maps-1-1.png">
-                            <img class="xzoom-gallery" width="100px" height="100px" src="./assets/images/maps-1-1.png" xpreview="./assets/images/maps-1-1.png" alt="Map Thumbnail 1">
-                        </a>
-                        <a href="./assets/images/maps-2-2.png">
-                            <img class="xzoom-gallery" width="100px" height="100px" src="./assets/images/maps-2-2.png" xpreview="./assets/images/maps-2-2.png" alt="Map Thumbnail 2">
-                        </a>
-                    </div>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides items-center justify-center text-center">
+                        <!-- Carousel items go here -->
+                        <li class="glide__slide">
+                            <div class="xzoom-container">
+                                <a href="./assets/images/maps-1-1.png" class="xzoom-1" xoriginal="./assets/images/maps-1-1.png">
+                                    <img class="xzoom  rounded-xl w-[700px] md:h-[600px] -[400px]" src="./assets/images/maps-1-1.png" alt="Map of Location" />
+                                </a>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="xzoom-container">
+                                <a href="./assets/images/maps-1-1.png" class="xzoom-2" xoriginal="./assets/images/maps-1-1.png">
+                                    <img class="xzoom  rounded-xl w-[700px] h-auto" src="./assets/images/maps-1-1.png" alt="Map of Location" />
+                                </a>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="xzoom-container">
+                                <a href="./assets/images/maps-1-1.png" class="xzoom-3" xoriginal="./assets/images/maps-1-1.png">
+                                    <img class="xzoom  rounded-xl w-[700px] h-auto" src="./assets/images/maps-1-1.png" alt="Map of Location" />
+                                </a>
+                            </div>
+                        </li>
+                        <!-- Add more items as needed -->
+                    </ul>
                 </div>
-                
-                <div class="flex flex-col gap-y-12 ">
-                    
-                    <div class="flex flex-col gap-y-5">
-    
-                        <!-- kampus 1 -->
-                        <div class="card-timeline flex flex-row bg-[#39638A] hover:bg-white hover:border-8 hover:border-[#39638A] text-white hover:text-[#39638A] rounded-2xl p-5 items-center gap-x-6 text-center justify-center" data-aos="fade-right" data-aos-duration="2000">
-                    
-                            <a href="" class="font-bold text-base  text-center">As Syfa Kampus 1  Jalan Cagak Subang</a>
-                                
-                        </div>
-    
-                        <!-- kampus 2 -->
-        
-                        <div class="card-timeline flex flex-row bg-[#39638A] hover:bg-white hover:border-8 hover:border-[#39638A] text-white hover:text-[#39638A] rounded-2xl p-5 items-center gap-x-6 text-center justify-center" data-aos="fade-left" data-aos-duration="2000">
-                    
-                            <a href="" class="font-bold text-base  text-center">As Syfa Kampus 2 Wanareja</a>
-                                
-                        </div>
-    
-                        <!-- kampus 3 -->
-        
-                        <div class="card-timeline flex flex-row bg-[#39638A] hover:bg-white hover:border-8 hover:border-[#39638A] text-white hover:text-[#39638A] rounded-2xl p-5 items-center gap-x-6 text-center justify-center" data-aos="fade-right" data-aos-duration="2000">
-                    
-                            <a href="" class="font-bold text-base  text-center">As Syfa Kampus 3  Sagalaherang</a>
-                                
-                        </div>
-    
-                    </div>  
-                  
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left bg-[#39638A]  font-semibold hover:font-bold opacity-30" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right bg-[#39638A] opacity-30 font-semibold hover:font-bold" data-glide-dir=">">next</button>
                 </div>
-        
             </div>
-                
         </div>
     </section>
     
@@ -558,7 +565,73 @@
                     <img src="./assets/images/logo.png" alt="" class="mb-10">
                     <p>ASFERA adalah perlombaaan untuk acara boarding school <br>
                         assyfa
-                    </p>                                   
+                    </p>
+                    <div class="flex title-font font-medium items-center text-gray-900  lg:mb-0 md:mb-0 space-x-5 mt-4" style="cursor: pointer;">
+                        <!-- Instagram -->
+                        <button
+                        type="button"
+                        data-te-ripple-init
+                        data-te-ripple-color="light"
+                        class="mb-2 inline-block rounded px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                        style="background-color: #c13584">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4"
+                        fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                        </button>
+                        <!-- Youtube -->
+                        <button
+                        type="button"
+                        data-te-ripple-init
+                        data-te-ripple-color="light"
+                        class="mb-2 inline-block rounded px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                        style="background-color: #ff0000">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4"
+                        fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                        </svg>
+                        </button>
+                          <!-- TikTok -->
+                        <button
+                        type="button"
+                        data-te-ripple-init
+                        data-te-ripple-color="light"
+                        class="mb-2 inline-block rounded px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                        style="background-color: #6a76ac">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                        class="h-4 w-4">
+                        <path
+                            fill="currentColor"
+                            d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                        </svg>
+                        </button>
+                          <!-- Whatsapp -->
+                        <button
+                        type="button"
+                        data-te-ripple-init
+                        data-te-ripple-color="light"
+                        class="mb-2 inline-block rounded px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                        style="background-color: #128c7e">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4"
+                        fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                        </svg>
+                        </button>
+                    </div>                                   
                   </div>
                 
                 </div>
@@ -586,7 +659,7 @@
                 <h2 class="title-font text-2xl mb-5  font-bold text-[#39638A]">CONTACT </h2>
                     <nav class="list-none list-footer space-y-5 text-blue-950">
                     <li>
-                        <a href="" class="hover:font-bold" >Sponshorship</a>
+                        <a href="" class="hover:font-bold" >Kontak Lomba</a>
                     </li>
                     <li>
                         <a href="" class="hover:font-bold">Media Partner</a>
@@ -623,6 +696,7 @@
                     </li>
                     
                   </nav>
+                  <hr style="border-color: #2E2E5A;">
                 </div>  
               </div>
             </div>
@@ -631,86 +705,34 @@
                 <hr style="border-color: #2E2E5A;">
               </div>
                 <div class="container mx-auto flex  pt-2 flex-col lg:flex-row items-center space-y-5 lg:space-y-0">
-                  <div class="flex title-font font-medium items-center text-gray-900 mb-4 lg:mb-0 md:mb-0 space-x-5" style="cursor: pointer;">
-                    <!-- Instagram -->
-                    <button
-                    type="button"
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                    class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-                    style="background-color: #c13584">
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4"
-                    fill="currentColor"
-                    viewBox="0 0 24 24">
-                    <path
-                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                    </svg>
-                    </button>
-                    <!-- Youtube -->
-                    <button
-                    type="button"
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                    class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-                    style="background-color: #ff0000">
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4"
-                    fill="currentColor"
-                    viewBox="0 0 24 24">
-                    <path
-                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
-                    </svg>
-                    </button>
-                      <!-- TikTok -->
-                    <button
-                    type="button"
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                    class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-                    style="background-color: #6a76ac">
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    class="h-4 w-4">
-                    <path
-                        fill="currentColor"
-                        d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
-                    </svg>
-                    </button>
-                      <!-- Whatsapp -->
-                    <button
-                    type="button"
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                    class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-                    style="background-color: #128c7e">
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4"
-                    fill="currentColor"
-                    viewBox="0 0 24 24">
-                    <path
-                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
-                    </svg>
-                    </button>
-                  </div>
-                  <nav class="mx-auto flex flex-wrap items-center text-base justify-center space-x-5 font-bold text-[#39638A]">
-                    <a href="" class="footer-link">Terms of Service</a>
-                    <span>|</span>
-                    <a href="" class="footer-link">Privacy Policy</a>
-                    <span>|</span>
-                    <a href="" class="footer-link">Licenses</a>
-                  </nav>
-                  <nav class="flex lg:flex-row flex-col items-center text-base justify-center font-bold text-[#39638A]">
-                    <p>Copyright ©  2023 Syfest & Asfera</p>
+                  <nav class="flex lg:flex-row flex-col items-center text-base justify-center font-bold text-[#39638A] text-center justify-center">
+                    <p class="text-center">Copyright ©  2023 Syfest & Asfera</p>
                   </nav>
                 </div>
             </div>
         </footer>
     </section>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            new Glide('.glide', {
+                type: 'carousel',
+                startAt: 0,
+                perView: 1,
+                focusAt: 'center',
+                breakpoints: {
+                    800: {
+                        perView: 1
+                    },
+                    600: {
+                        perView: 1
+                    }
+                }
+            }).mount();
+        });
+    </script>
 
     <script>
         $(document).ready(function () {
@@ -753,8 +775,53 @@
             });
         });
     </script>
-    
 
+    <script>
+        // Params
+        var sliderSelector = '.swiper-container',
+            options = {
+            init: false,
+            loop: true,
+            speed:800,
+            slidesPerView: 2, // or 'auto'
+            // spaceBetween: 10,
+            centeredSlides : true,
+            effect: 'coverflow', // 'cube', 'fade', 'coverflow',
+            coverflowEffect: {
+                rotate: 50, // Slide rotate in degrees
+                depth: 0, // Depth offset in px (slides translate in Z axis)
+                modifier: 1, // Effect multipler
+                slideShadows : true, // Enables slides shadows
+            },
+            grabCursor: true,
+            parallax: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                1023: {
+                slidesPerView: 1,
+                spaceBetween: 0
+                }
+            },
+            // Events
+            on: {
+                imagesReady: function(){
+                this.el.classList.remove('loading');
+                }
+            }
+            };
+        var mySwiper = new Swiper(sliderSelector, options);
+
+        // Initialize slider
+        mySwiper.init();
+    </script>
+    
     <script>
         // Set the date and time of the event (YYYY, MM (0-11), DD, HH, MM, SS)
         const eventDate = new Date(2023, 11, 25, 23, 59, 59).getTime();
@@ -792,7 +859,6 @@
         updateTimer();
     </script>
     
-
     <script>
         AOS.init();
     </script>
@@ -800,41 +866,7 @@
     <script src="assets/plugin/xZoom-master/dist/xzoom.min.js"></script>
 
     <script>
-        $('.xzoom, .xzoom-gallery').xzoom({position: 'lens', lensShape: 'circle', bg:true, sourceClass: 'xzoom-hidden'});
-    </script>
-
-    <script>
-        var currentIndex = 0;
-        var images = [
-            "assets/images/gallery-2.png",
-            "assets/images/gallery.png",
-            "assets/images/gallery-3.png",
-            "assets/images/gallery-4.png",
-            "assets/images/gallery-5.png",
-            "assets/images/gallery-6.png"
-        ];
-    
-        function prevImage() {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            updateGallery();
-        }
-    
-        function nextImage() {
-            currentIndex = (currentIndex + 1) % images.length;
-            updateGallery();
-        }
-    
-        function updateGallery() {
-            var galleryContainer = document.getElementById("galleryContainer");
-            galleryContainer.innerHTML = '';
-    
-            for (var i = 0; i < images.length; i++) {
-                var img = document.createElement("img");
-                img.className = "h-full w-auto aspect-video rounded-sm object-cover object-center dark:bg-gray-500 gap-x-4"; // Add gap-x-4 here
-                img.src = images[(currentIndex + i) % images.length];
-                galleryContainer.appendChild(img);
-            }
-        }
+        $('.xzoom-1, .xzoom-2, .xzoom-3, .xzoom-gallery').xzoom({position: 'lens', lensShape: 'circle', bg:true, sourceClass: 'xzoom-hidden'});
     </script>
     
     <!-- modal -->
